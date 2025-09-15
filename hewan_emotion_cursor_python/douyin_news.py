@@ -1,9 +1,24 @@
 # douyin_news.py
 import os
+import asyncio
 import re
 import random
 import json
 from typing import List, Tuple, Literal, Optional
+
+# Try to import the shared LLM manager (uses config/llm_configuration.json)
+try:
+    from diary_agent.core.llm_manager import LLMConfigManager
+except Exception:
+    import sys
+    # Add project root to path so we can import diary_agent.*
+    PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+    if PROJECT_ROOT not in sys.path:
+        sys.path.append(PROJECT_ROOT)
+    try:
+        from diary_agent.core.llm_manager import LLMConfigManager
+    except Exception:
+        LLMConfigManager = None  # LLM will be unavailable; fall back to rules
 
 from db_utils import get_emotion_data
 from emotion_database import update_emotion_in_database
@@ -77,25 +92,55 @@ def load_douyin_hot_words(file_path: str = None, page_size: int = 50) -> List[st
         print(f"Error reading Douyin words file: {e}")
         return []
 
-def classify_douyin_news(words: List[str]) -> Optional[Literal["disaster", "celebration"]]:
-    """
-    Classify Douyin hot words as disaster or celebration based on keywords.
-    
-    :param words: List of Douyin hot words
-    :return: Classification result or None
-    """
+def _classify_by_rules(words: List[str]) -> Optional[Literal["disaster", "celebration"]]:
+    """Rule-based fallback classification using keyword hits."""
     if not words:
         return None
-    
     text = " ".join(words).lower()
-    
     disaster_hits = sum(1 for keyword in DISASTER_KEYWORDS if re.search(re.escape(keyword.lower()), text))
     celebration_hits = sum(1 for keyword in CELEBRATION_KEYWORDS if re.search(re.escape(keyword.lower()), text))
-    
     if disaster_hits == 0 and celebration_hits == 0:
         return None
-    
     return "disaster" if disaster_hits >= celebration_hits else "celebration"
+
+
+async def _classify_with_llm_async(words: List[str]) -> Optional[Literal["disaster", "celebration"]]:
+    """Use shared LLM configuration to classify words when available."""
+    if not words or not LLMConfigManager:
+        return None
+    try:
+        llm = LLMConfigManager("config/llm_configuration.json")
+        prompt = (
+            "你是一个分类助手。根据给定的抖音热词，判断整体更接近‘灾难’还是‘庆祝’类型。\n"
+            "只输出一个英文单词：disaster 或 celebration。不要输出其它任何内容。\n\n"
+            f"热词：{', '.join(words[:50])}"
+        )
+        system_prompt = "严格输出：disaster 或 celebration。"
+        result = await llm.generate_text_with_failover(prompt=prompt, system_prompt=system_prompt)
+        ans = (result or "").strip().lower()
+        if "disaster" in ans:
+            return "disaster"
+        if "celebration" in ans:
+            return "celebration"
+        return None
+    except Exception:
+        return None
+
+
+def classify_douyin_news(words: List[str]) -> Optional[Literal["disaster", "celebration"]]:
+    """Smart classifier: prefer LLM via config/llm_configuration.json; fall back to rules."""
+    # Try LLM first (synchronously run the async call)
+    try:
+        llm_result = asyncio.run(_classify_with_llm_async(words))
+    except RuntimeError:
+        # If already in an event loop, create a new one
+        llm_result = asyncio.get_event_loop().run_until_complete(_classify_with_llm_async(words))
+    except Exception:
+        llm_result = None
+    if llm_result in ("disaster", "celebration"):
+        return llm_result
+    # Fallback to rules
+    return _classify_by_rules(words)
 
 def get_user_data(user_id: int) -> Optional[dict]:
     """Get user data from database."""
