@@ -1,0 +1,29 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+
+# Node / Frontend
+node_modules/
+test_frontend/node_modules/
+test_frontend/dist/
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Env files
+*.env
+*.env.*
+!test_frontend/.env.production
+
+# Build caches
+*.cache
+.cache/
+
+

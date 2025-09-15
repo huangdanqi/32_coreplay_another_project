@@ -1,0 +1,108 @@
+{
+  "providers": {
+    "deepseek": {
+      "api_endpoint": "https://api.deepseek.com/v1/chat/completions",
+      "api_key": "your-deepseek-api-key",
+      "capabilities": [
+        "general",
+        "coding",
+        "analytical"
+      ],
+      "enabled": false,
+      "max_tokens": 150,
+      "model_name": "deepseek-chat",
+      "priority": 3,
+      "provider_name": "deepseek",
+      "provider_type": "cloud",
+      "retry_attempts": 3,
+      "temperature": 0.7,
+      "timeout": 30
+    },
+    "ollama_qwen3": {
+      "api_endpoint": "http://localhost:11434/api/generate",
+      "api_key": "not-required",
+      "capabilities": [
+        "general",
+        "creative",
+        "local"
+      ],
+      "enabled": false,
+      "max_tokens": 150,
+      "model_name": "qwen3:4b",
+      "priority": 1,
+      "provider_name": "ollama_qwen3",
+      "provider_type": "ollama",
+      "retry_attempts": 3,
+      "temperature": 0.7,
+      "timeout": 60
+    },
+    "qwen": {
+      "api_endpoint": "https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation",
+      "api_key": "your-qwen-api-key",
+      "capabilities": [
+        "general",
+        "creative",
+        "fast"
+      ],
+      "enabled": false,
+      "max_tokens": 150,
+      "model_name": "qwen-turbo",
+      "priority": 2,
+      "provider_name": "qwen",
+      "provider_type": "cloud",
+      "retry_attempts": 3,
+      "temperature": 0.7,
+      "timeout": 30
+    },
+    "zhipu": {
+      "api_endpoint": "https://open.bigmodel.cn/api/paas/v4/chat/completions",
+      "api_key": "6765ce8864c74db497bbae946cf44061.ttXTG4FaqJ5GbjW1",
+      "capabilities": [
+        "general",
+        "chinese",
+        "creative",
+        "analytical"
+      ],
+      "enabled": true,
+      "max_tokens": 150,
+      "model_name": "glm-4",
+      "priority": 4,
+      "provider_name": "zhipu",
+      "provider_type": "cloud",
+      "retry_attempts": 3,
+      "temperature": 0.7,
+      "timeout": 30
+    }
+  },
+  "model_selection": {
+    "default_provider": "zhipu",
+    "enable_auto_switch": true,
+    "switch_on_failure": true,
+    "switch_on_timeout": true,
+    "switch_on_high_cost": false,
+    "max_switches_per_request": 3,
+    "timeout_threshold": 10,
+    "prefer_fastest": false,
+    "prefer_cheapest": false,
+    "prefer_highest_quality": true,
+    "auto_switch_rules": {
+      "enable_auto_switch": true,
+      "max_switches_per_request": 3,
+      "switch_on_failure": true,
+      "switch_on_high_cost": false,
+      "switch_on_timeout": true
+    },
+    "fallback_providers": [
+      "qwen",
+      "deepseek"
+    ],
+    "performance_settings": {
+      "prefer_cheapest": false,
+      "prefer_fastest": false,
+      "prefer_highest_quality": true,
+      "timeout_threshold": 10
+    }
+  },
+  "updated_at": "2025-09-14T23:23:53.288111",
+  "updated_by": "admin"
+}

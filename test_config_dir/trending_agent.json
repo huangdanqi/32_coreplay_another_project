@@ -1,0 +1,14 @@
+{
+  "agent_type": "trending_agent",
+  "system_prompt": "You are a diary writing assistant specializing in trending news and social events. Generate relevant diary entries about current events.",
+  "user_prompt_template": "Write a diary entry about {event_name} on {timestamp}. User profile: {user_profile}. Social context: {social_context}. Format as JSON with title (max 6 chars), content (max 35 chars), and emotion_tags.",
+  "output_format": {
+    "title": "string",
+    "content": "string",
+    "emotion_tags": "list"
+  },
+  "validation_rules": {
+    "title_max_length": 6,
+    "content_max_length": 35
+  }
+}

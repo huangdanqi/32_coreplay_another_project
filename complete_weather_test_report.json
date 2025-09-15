@@ -1,0 +1,127 @@
+{
+  "test_statistics": {
+    "total_tests": 4,
+    "successful_tests": 4,
+    "failed_tests": 0,
+    "api_calls": 0,
+    "diary_entries": 4,
+    "total_time": 7.644642353057861
+  },
+  "detailed_results": [
+    {
+      "test_name": "Shanghai Favorite Weather (Real API)",
+      "success": true,
+      "timestamp": "2025-09-02T22:07:27.315225",
+      "details": {
+        "diary_entry": {
+          "title": "天气",
+          "content": "今天天气Clear，还好吧",
+          "emotions": [
+            "EmotionalTag.CALM"
+          ],
+          "agent_type": "weather_agent",
+          "llm_provider": "ollama_qwen3",
+          "timestamp": "2025-09-02T22:07:25.561721"
+        },
+        "validation": {
+          "title_length": 2,
+          "content_length": 13,
+          "title_valid": true,
+          "content_valid": true,
+          "has_emotions": true
+        },
+        "performance": {
+          "processing_time_seconds": 1.7499964237213135,
+          "api_calls_made": true,
+          "llm_provider_used": "ollama_qwen3"
+        },
+        "location_data": {
+          "ip_address": "202.96.209.5",
+          "expected_city": "Shanghai",
+          "real_api_used": true
+        }
+      }
+    },
+    {
+      "test_name": "Beijing Dislike Weather (Real API)",
+      "success": true,
+      "timestamp": "2025-09-02T22:07:32.159428",
+      "details": {
+        "diary_entry": {
+          "title": "天气",
+          "content": "今天天气Clear，还好吧",
+          "emotions": [
+            "EmotionalTag.CALM"
+          ],
+          "agent_type": "weather_agent",
+          "llm_provider": "ollama_qwen3"
+        },
+        "validation": {
+          "title_length": 2,
+          "content_length": 13,
+          "title_valid": true,
+          "content_valid": true,
+          "has_emotions": true
+        },
+        "performance": {
+          "processing_time_seconds": 4.839677333831787,
+          "api_calls_made": true,
+          "llm_provider_used": "ollama_qwen3"
+        }
+      }
+    },
+    {
+      "test_name": "Seasonal Events (Real API)",
+      "success": true,
+      "timestamp": "2025-09-02T22:07:33.174394",
+      "details": {
+        "seasonal_entries": 2,
+        "entries": [
+          {
+            "title": "季节",
+            "content": "现在是Spring，时间过得真快",
+            "emotions": [
+              "EmotionalTag.CALM"
+            ]
+          },
+          {
+            "title": "季节",
+            "content": "现在是Spring，时间过得真快",
+            "emotions": [
+              "EmotionalTag.CALM"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "test_name": "System Performance & Health",
+      "success": true,
+      "timestamp": "2025-09-02T22:07:33.176583",
+      "details": {
+        "llm_provider_status": {
+          "providers": [
+            "ollama_qwen3",
+            "qwen",
+            "deepseek"
+          ],
+          "current_provider": "ollama_qwen3",
+          "total_providers": 3
+        },
+        "supported_events": [
+          "favorite_weather",
+          "dislike_weather",
+          "favorite_season",
+          "dislike_season"
+        ],
+        "performance_metrics": {
+          "average_processing_time": 0.0,
+          "success_rate": 1.0,
+          "total_diary_entries": 4
+        }
+      }
+    }
+  ],
+  "timestamp": "2025-09-02T22:07:33.192035",
+  "requirements_met": true
+}

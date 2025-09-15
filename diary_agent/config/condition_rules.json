@@ -1,0 +1,140 @@
+{
+  "trigger_conditions": [
+    {
+      "condition_id": "weather_events",
+      "condition_type": "event_based",
+      "event_types": ["weather", "seasonal"],
+      "probability": 1.0,
+      "is_active": true,
+      "metadata": {
+        "description": "Always trigger for weather and seasonal events",
+        "priority": "high"
+      }
+    },
+    {
+      "condition_id": "social_events",
+      "condition_type": "event_based", 
+      "event_types": ["friends", "same_frequency", "interactive"],
+      "probability": 0.7,
+      "is_active": true,
+      "metadata": {
+        "description": "70% chance to trigger for social interaction events",
+        "priority": "medium"
+      }
+    },
+    {
+      "condition_id": "trending_events",
+      "condition_type": "event_based",
+      "event_types": ["trending"],
+      "probability": 0.5,
+      "is_active": true,
+      "metadata": {
+        "description": "50% chance to trigger for trending/news events",
+        "priority": "medium"
+      }
+    },
+    {
+      "condition_id": "holiday_events",
+      "condition_type": "event_based",
+      "event_types": ["holiday"],
+      "probability": 0.8,
+      "is_active": true,
+      "metadata": {
+        "description": "80% chance to trigger for holiday events",
+        "priority": "high"
+      }
+    },
+    {
+      "condition_id": "dialogue_events",
+      "condition_type": "event_based",
+      "event_types": ["dialogue"],
+      "probability": 0.9,
+      "is_active": true,
+      "metadata": {
+        "description": "90% chance to trigger for dialogue events",
+        "priority": "high"
+      }
+    },
+    {
+      "condition_id": "neglect_events",
+      "condition_type": "event_based",
+      "event_types": ["neglect"],
+      "probability": 1.0,
+      "is_active": true,
+      "metadata": {
+        "description": "Always trigger for neglect events",
+        "priority": "high"
+      }
+    },
+    {
+      "condition_id": "daily_quota_reset",
+      "condition_type": "time_based",
+      "event_types": ["all"],
+      "time_range": ["00:00:00", "00:01:00"],
+      "probability": 1.0,
+      "is_active": true,
+      "metadata": {
+        "description": "Daily quota reset at midnight",
+        "priority": "system"
+      }
+    },
+    {
+      "condition_id": "image_analysis",
+      "condition_type": "image_based",
+      "event_types": ["weather", "interactive", "trending"],
+      "probability": 0.6,
+      "is_active": true,
+      "metadata": {
+        "description": "Image-based event detection",
+        "priority": "medium"
+      }
+    }
+  ],
+  "claimed_events": [
+    {
+      "event_type": "weather",
+      "event_name": "favorite_weather",
+      "is_claimed": true
+    },
+    {
+      "event_type": "weather", 
+      "event_name": "dislike_weather",
+      "is_claimed": true
+    },
+    {
+      "event_type": "seasonal",
+      "event_name": "favorite_season",
+      "is_claimed": true
+    },
+    {
+      "event_type": "seasonal",
+      "event_name": "dislike_season", 
+      "is_claimed": true
+    },
+    {
+      "event_type": "adoption",
+      "event_name": "toy_claimed",
+      "is_claimed": true
+    },
+    {
+      "event_type": "dialogue",
+      "event_name": "positive_emotional_dialogue",
+      "is_claimed": true
+    },
+    {
+      "event_type": "dialogue",
+      "event_name": "negative_emotional_dialogue",
+      "is_claimed": true
+    },
+    {
+      "event_type": "neglect",
+      "event_name": "neglect_30_days_no_dialogue",
+      "is_claimed": true
+    },
+    {
+      "event_type": "neglect",
+      "event_name": "neglect_30_days_no_interaction",
+      "is_claimed": true
+    }
+  ]
+}

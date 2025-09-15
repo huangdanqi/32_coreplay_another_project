@@ -1,0 +1,94 @@
+[
+  {
+    "scenario_name": "积极情绪对话",
+    "event_name": "positive_emotional_dialogue",
+    "dialogue_message": "今天很开心！",
+    "owner_emotion": "开心快乐",
+    "description": "主人情绪积极的对话，分享快乐",
+    "expected_content": "和主人聊天真开心！",
+    "expected_emotion": "开心快乐",
+    "dialogue_event": {
+      "event_type": "positive_emotional_dialogue",
+      "user_id": 1,
+      "dialogue_message": "今天很开心！",
+      "owner_emotion": "开心快乐",
+      "event_summary": "主人情绪积极的对话",
+      "event_title": "快乐对话",
+      "content_topic": "分享快乐",
+      "owner_emotion_state": "开心快乐"
+    },
+    "diary_entry": {
+      "entry_id": "1_test_dialogue_1756961437.430132_1756961437",
+      "user_id": 1,
+      "timestamp": "2025-09-03T21:50:37.428918",
+      "event_type": "human_machine_dialogue",
+      "event_name": "positive_emotional_dialogue",
+      "original_title": "<think",
+      "cleaned_title": "对话记录",
+      "original_content": "首先，用户要求我生成一个日记条目，",
+      "cleaned_content": "和主人聊天真开心！",
+      "emotion_tags": [
+        "平静"
+      ],
+      "agent_type": "dialogue_agent",
+      "llm_provider": "ollama_qwen3"
+    },
+    "validation_results": {
+      "dialogue_message": "❌ 缺失: 今天很开心！",
+      "owner_emotion": "❌ 缺失: 开心快乐",
+      "event_summary": "❌ 缺失: 主人情绪积极的对话",
+      "content_topic": "❌ 缺失: 分享快乐"
+    },
+    "content_cleaning": {
+      "had_think_tags": true,
+      "had_thinking_patterns": true,
+      "cleaning_applied": true
+    }
+  },
+  {
+    "scenario_name": "消极情绪对话",
+    "event_name": "negative_emotional_dialogue",
+    "dialogue_message": "今天心情不好...",
+    "owner_emotion": "悲伤难过",
+    "description": "主人情绪消极的对话，需要安慰",
+    "expected_content": "安慰主人好重要！",
+    "expected_emotion": "担忧",
+    "dialogue_event": {
+      "event_type": "negative_emotional_dialogue",
+      "user_id": 1,
+      "dialogue_message": "今天心情不好...",
+      "owner_emotion": "悲伤难过",
+      "event_summary": "主人情绪积极的对话",
+      "event_title": "快乐对话",
+      "content_topic": "分享快乐",
+      "owner_emotion_state": "开心快乐"
+    },
+    "diary_entry": {
+      "entry_id": "1_test_dialogue_1756961495.928794_1756961495",
+      "user_id": 1,
+      "timestamp": "2025-09-03T21:51:35.927322",
+      "event_type": "human_machine_dialogue",
+      "event_name": "negative_emotional_dialogue",
+      "original_title": "<think",
+      "cleaned_title": "对话记录",
+      "original_content": "首先，用户要求我生成一个日记条目，",
+      "cleaned_content": "安慰主人好重要！",
+      "emotion_tags": [
+        "平静"
+      ],
+      "agent_type": "dialogue_agent",
+      "llm_provider": "ollama_qwen3"
+    },
+    "validation_results": {
+      "dialogue_message": "❌ 缺失: 今天心情不好...",
+      "owner_emotion": "❌ 缺失: 悲伤难过",
+      "event_summary": "❌ 缺失: 主人情绪积极的对话",
+      "content_topic": "❌ 缺失: 分享快乐"
+    },
+    "content_cleaning": {
+      "had_think_tags": true,
+      "had_thinking_patterns": true,
+      "cleaning_applied": true
+    }
+  }
+]

@@ -1,0 +1,16 @@
+# MCP (Model Context Protocol) dependencies
+mcp>=0.1.0
+
+# Additional dependencies for the dairy agent
+requests>=2.31.0
+asyncio-mqtt>=0.11.0
+python-dateutil>=2.8.2
+
+# HTTP client for LLM API calls (including Ollama)
+aiohttp>=3.8.0
+
+# Image processing for condition checker
+Pillow>=9.0.0
+
+# Database connectivity
+mysql-connector-python>=8.0.0

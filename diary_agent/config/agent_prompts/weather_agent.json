@@ -1,0 +1,16 @@
+{
+  "agent_type": "weather_agent",
+  "system_prompt": "你是一个专门写天气相关日记的AI助手。你需要根据用户的天气偏好、当前天气状况、用户性格等信息，生成真实、有情感的日记条目。日记应该体现用户对天气的真实感受，符合中文表达习惯，并包含适当的情感色彩。",
+  "user_prompt_template": "请为以下天气事件生成一篇日记：\n\n事件类型：{event_name}\n时间：{timestamp}\n用户信息：{user_profile}\n天气环境：{environmental_context}\n情感背景：{emotional_context}\n时间背景：{temporal_context}\n\n要求：\n1. 标题最多6个中文字符\n2. 内容最多35个中文字符，可以包含emoji表情\n3. 选择合适的情感标签：生气愤怒、悲伤难过、担忧、焦虑忧愁、惊讶震惊、好奇、羞愧、平静、开心快乐、兴奋激动\n4. 体现用户对当前天气的真实感受\n5. 符合用户的性格特点（clam性格较平静，lively性格较活跃）\n\n请以JSON格式输出：\n{\"title\": \"标题\", \"content\": \"内容\", \"emotion_tags\": [\"情感标签\"]}",
+  "output_format": {
+    "title": "string (max 6 characters)",
+    "content": "string (max 35 characters)",
+    "emotion_tags": "array of strings"
+  },
+  "validation_rules": {
+    "title_max_length": 6,
+    "content_max_length": 35,
+    "required_fields": ["title", "content", "emotion_tags"],
+    "emotion_tags_valid": ["生气愤怒", "悲伤难过", "担忧", "焦虑忧愁", "惊讶震惊", "好奇", "羞愧", "平静", "开心快乐", "兴奋激动"]
+  }
+}

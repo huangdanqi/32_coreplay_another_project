@@ -1,0 +1,20 @@
+[
+  {
+    "scenario": "Play Together Event",
+    "event_name": "liked_interaction_once",
+    "interaction_type": "一起玩耍",
+    "generated_content": "Okay, the user wants me to generate"
+  },
+  {
+    "scenario": "Petting Event",
+    "event_name": "liked_interaction_3_to_5_times",
+    "interaction_type": "摸摸头",
+    "generated_content": "We are generating a diary entry for"
+  },
+  {
+    "scenario": "Feeding Event",
+    "event_name": "liked_interaction_over_5_times",
+    "interaction_type": "喂食",
+    "generated_content": "We are generating a diary entry for"
+  }
+]

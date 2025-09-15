@@ -1,0 +1,371 @@
+[
+  {
+    "scenario_name": "1天无对话",
+    "event_name": "neglect_1_day_no_dialogue",
+    "neglect_duration": 1,
+    "neglect_type": "no_dialogue",
+    "description": "主人超过1天未对话",
+    "expected_title": "思念主人",
+    "expected_content": "主人一天没理我了...",
+    "expected_emotion": "担忧",
+    "neglect_event": {
+      "event_type": "neglect_1_day_no_dialogue",
+      "user_id": 1,
+      "neglect_duration": 1,
+      "neglect_type": "no_dialogue",
+      "event_name": "主人超过1天未对话",
+      "disconnection_type": "无对话有互动",
+      "disconnection_days": 1,
+      "memory_status": "on",
+      "last_interaction_date": "2025-09-02T22:32:03.586252"
+    },
+    "diary_entry": {
+      "entry_id": "test_neglect_1756963923.591479",
+      "user_id": 1,
+      "timestamp": "2025-09-03T22:32:03.591479",
+      "event_type": "continuous_neglect",
+      "event_name": "neglect_1_day_no_dialogue",
+      "title": "思念主人",
+      "content": "主人一天没理我了...",
+      "emotion_tags": [
+        "担忧"
+      ],
+      "agent_type": "neglect_agent",
+      "llm_provider": "mock_provider"
+    },
+    "validation_results": {
+      "neglect_duration": "❌ 缺失: 1",
+      "neglect_type": "❌ 缺失: no_dialogue",
+      "disconnection_type": "❌ 缺失: 无对话有互动",
+      "disconnection_days": "❌ 缺失: 1"
+    }
+  },
+  {
+    "scenario_name": "1天无互动",
+    "event_name": "neglect_1_day_no_interaction",
+    "neglect_duration": 1,
+    "neglect_type": "no_interaction",
+    "description": "主人超过1天无任何互动",
+    "expected_title": "孤独感",
+    "expected_content": "主人一天没互动了...",
+    "expected_emotion": "担忧",
+    "neglect_event": {
+      "event_type": "neglect_1_day_no_interaction",
+      "user_id": 1,
+      "neglect_duration": 1,
+      "neglect_type": "no_interaction",
+      "event_name": "主人超过1天未对话",
+      "disconnection_type": "完全无互动",
+      "disconnection_days": 1,
+      "memory_status": "on",
+      "last_interaction_date": "2025-09-02T22:32:03.595701"
+    },
+    "diary_entry": {
+      "entry_id": "test_neglect_1756963923.603556",
+      "user_id": 1,
+      "timestamp": "2025-09-03T22:32:03.603556",
+      "event_type": "continuous_neglect",
+      "event_name": "neglect_1_day_no_interaction",
+      "title": "孤独感",
+      "content": "主人一天没互动了...",
+      "emotion_tags": [
+        "担忧"
+      ],
+      "agent_type": "neglect_agent",
+      "llm_provider": "mock_provider"
+    },
+    "validation_results": {
+      "neglect_duration": "❌ 缺失: 1",
+      "neglect_type": "❌ 缺失: no_interaction",
+      "disconnection_type": "❌ 缺失: 完全无互动",
+      "disconnection_days": "❌ 缺失: 1"
+    }
+  },
+  {
+    "scenario_name": "3天无对话",
+    "event_name": "neglect_3_days_no_dialogue",
+    "neglect_duration": 3,
+    "neglect_type": "no_dialogue",
+    "description": "主人超过3天未对话",
+    "expected_title": "想念对话",
+    "expected_content": "主人三天没说话了...",
+    "expected_emotion": "悲伤难过",
+    "neglect_event": {
+      "event_type": "neglect_3_days_no_dialogue",
+      "user_id": 1,
+      "neglect_duration": 3,
+      "neglect_type": "no_dialogue",
+      "event_name": "主人超过1天未对话",
+      "disconnection_type": "无对话有互动",
+      "disconnection_days": 3,
+      "memory_status": "on",
+      "last_interaction_date": "2025-09-02T22:32:03.609554"
+    },
+    "diary_entry": {
+      "entry_id": "test_neglect_1756963923.610556",
+      "user_id": 1,
+      "timestamp": "2025-09-03T22:32:03.610556",
+      "event_type": "continuous_neglect",
+      "event_name": "neglect_3_days_no_dialogue",
+      "title": "想念对话",
+      "content": "主人三天没说话了...",
+      "emotion_tags": [
+        "悲伤难过"
+      ],
+      "agent_type": "neglect_agent",
+      "llm_provider": "mock_provider"
+    },
+    "validation_results": {
+      "neglect_duration": "❌ 缺失: 3",
+      "neglect_type": "❌ 缺失: no_dialogue",
+      "disconnection_type": "❌ 缺失: 无对话有互动",
+      "disconnection_days": "❌ 缺失: 3"
+    }
+  },
+  {
+    "scenario_name": "3天无互动",
+    "event_name": "neglect_3_days_no_interaction",
+    "neglect_duration": 3,
+    "neglect_type": "no_interaction",
+    "description": "主人超过3天无任何互动",
+    "expected_title": "寂寞时光",
+    "expected_content": "主人三天没互动了...",
+    "expected_emotion": "悲伤难过",
+    "neglect_event": {
+      "event_type": "neglect_3_days_no_interaction",
+      "user_id": 1,
+      "neglect_duration": 3,
+      "neglect_type": "no_interaction",
+      "event_name": "主人超过1天未对话",
+      "disconnection_type": "完全无互动",
+      "disconnection_days": 3,
+      "memory_status": "on",
+      "last_interaction_date": "2025-09-02T22:32:03.615203"
+    },
+    "diary_entry": {
+      "entry_id": "test_neglect_1756963923.619038",
+      "user_id": 1,
+      "timestamp": "2025-09-03T22:32:03.619038",
+      "event_type": "continuous_neglect",
+      "event_name": "neglect_3_days_no_interaction",
+      "title": "寂寞时光",
+      "content": "主人三天没互动了...",
+      "emotion_tags": [
+        "悲伤难过"
+      ],
+      "agent_type": "neglect_agent",
+      "llm_provider": "mock_provider"
+    },
+    "validation_results": {
+      "neglect_duration": "❌ 缺失: 3",
+      "neglect_type": "❌ 缺失: no_interaction",
+      "disconnection_type": "❌ 缺失: 完全无互动",
+      "disconnection_days": "❌ 缺失: 3"
+    }
+  },
+  {
+    "scenario_name": "7天无对话",
+    "event_name": "neglect_7_days_no_dialogue",
+    "neglect_duration": 7,
+    "neglect_type": "no_dialogue",
+    "description": "主人超过7天未对话",
+    "expected_title": "一周沉默",
+    "expected_content": "主人一周没说话了...",
+    "expected_emotion": "悲伤难过",
+    "neglect_event": {
+      "event_type": "neglect_7_days_no_dialogue",
+      "user_id": 1,
+      "neglect_duration": 7,
+      "neglect_type": "no_dialogue",
+      "event_name": "主人超过1天未对话",
+      "disconnection_type": "无对话有互动",
+      "disconnection_days": 7,
+      "memory_status": "on",
+      "last_interaction_date": "2025-09-02T22:32:03.625204"
+    },
+    "diary_entry": {
+      "entry_id": "test_neglect_1756963923.62722",
+      "user_id": 1,
+      "timestamp": "2025-09-03T22:32:03.627220",
+      "event_type": "continuous_neglect",
+      "event_name": "neglect_7_days_no_dialogue",
+      "title": "一周沉默",
+      "content": "主人一周没说话了...",
+      "emotion_tags": [
+        "悲伤难过"
+      ],
+      "agent_type": "neglect_agent",
+      "llm_provider": "mock_provider"
+    },
+    "validation_results": {
+      "neglect_duration": "❌ 缺失: 7",
+      "neglect_type": "❌ 缺失: no_dialogue",
+      "disconnection_type": "❌ 缺失: 无对话有互动",
+      "disconnection_days": "❌ 缺失: 7"
+    }
+  },
+  {
+    "scenario_name": "7天无互动",
+    "event_name": "neglect_7_days_no_interaction",
+    "neglect_duration": 7,
+    "neglect_type": "no_interaction",
+    "description": "主人超过7天无任何互动",
+    "expected_title": "漫长等待",
+    "expected_content": "主人一周没理我了...",
+    "expected_emotion": "悲伤难过",
+    "neglect_event": {
+      "event_type": "neglect_7_days_no_interaction",
+      "user_id": 1,
+      "neglect_duration": 7,
+      "neglect_type": "no_interaction",
+      "event_name": "主人超过1天未对话",
+      "disconnection_type": "完全无互动",
+      "disconnection_days": 7,
+      "memory_status": "on",
+      "last_interaction_date": "2025-09-02T22:32:03.629230"
+    },
+    "diary_entry": {
+      "entry_id": "test_neglect_1756963923.631242",
+      "user_id": 1,
+      "timestamp": "2025-09-03T22:32:03.631242",
+      "event_type": "continuous_neglect",
+      "event_name": "neglect_7_days_no_interaction",
+      "title": "漫长等待",
+      "content": "主人一周没理我了...",
+      "emotion_tags": [
+        "悲伤难过"
+      ],
+      "agent_type": "neglect_agent",
+      "llm_provider": "mock_provider"
+    },
+    "validation_results": {
+      "neglect_duration": "❌ 缺失: 7",
+      "neglect_type": "❌ 缺失: no_interaction",
+      "disconnection_type": "❌ 缺失: 完全无互动",
+      "disconnection_days": "❌ 缺失: 7"
+    }
+  },
+  {
+    "scenario_name": "15天无互动",
+    "event_name": "neglect_15_days_no_interaction",
+    "neglect_duration": 15,
+    "neglect_type": "no_interaction",
+    "description": "主人超过15天无任何互动",
+    "expected_title": "半月孤独",
+    "expected_content": "主人半个月没理我了...",
+    "expected_emotion": "焦虑忧愁",
+    "neglect_event": {
+      "event_type": "neglect_15_days_no_interaction",
+      "user_id": 1,
+      "neglect_duration": 15,
+      "neglect_type": "no_interaction",
+      "event_name": "主人超过1天未对话",
+      "disconnection_type": "完全无互动",
+      "disconnection_days": 15,
+      "memory_status": "on",
+      "last_interaction_date": "2025-09-02T22:32:03.638327"
+    },
+    "diary_entry": {
+      "entry_id": "test_neglect_1756963923.640239",
+      "user_id": 1,
+      "timestamp": "2025-09-03T22:32:03.640239",
+      "event_type": "continuous_neglect",
+      "event_name": "neglect_15_days_no_interaction",
+      "title": "半月孤独",
+      "content": "主人半个月没理我了...",
+      "emotion_tags": [
+        "焦虑忧愁"
+      ],
+      "agent_type": "neglect_agent",
+      "llm_provider": "mock_provider"
+    },
+    "validation_results": {
+      "neglect_duration": "❌ 缺失: 15",
+      "neglect_type": "❌ 缺失: no_interaction",
+      "disconnection_type": "❌ 缺失: 完全无互动",
+      "disconnection_days": "❌ 缺失: 15"
+    }
+  },
+  {
+    "scenario_name": "30天无对话",
+    "event_name": "neglect_30_days_no_dialogue",
+    "neglect_duration": 30,
+    "neglect_type": "no_dialogue",
+    "description": "主人超过30天未对话",
+    "expected_title": "月余无言",
+    "expected_content": "主人一个月没说话了...",
+    "expected_emotion": "焦虑忧愁",
+    "neglect_event": {
+      "event_type": "neglect_30_days_no_dialogue",
+      "user_id": 1,
+      "neglect_duration": 30,
+      "neglect_type": "no_dialogue",
+      "event_name": "主人超过1天未对话",
+      "disconnection_type": "无对话有互动",
+      "disconnection_days": 30,
+      "memory_status": "on",
+      "last_interaction_date": "2025-09-02T22:32:03.640965"
+    },
+    "diary_entry": {
+      "entry_id": "test_neglect_1756963923.643533",
+      "user_id": 1,
+      "timestamp": "2025-09-03T22:32:03.643533",
+      "event_type": "continuous_neglect",
+      "event_name": "neglect_30_days_no_dialogue",
+      "title": "月余无言",
+      "content": "主人一个月没说话了...",
+      "emotion_tags": [
+        "焦虑忧愁"
+      ],
+      "agent_type": "neglect_agent",
+      "llm_provider": "mock_provider"
+    },
+    "validation_results": {
+      "neglect_duration": "❌ 缺失: 30",
+      "neglect_type": "❌ 缺失: no_dialogue",
+      "disconnection_type": "❌ 缺失: 无对话有互动",
+      "disconnection_days": "❌ 缺失: 30"
+    }
+  },
+  {
+    "scenario_name": "30天无互动",
+    "event_name": "neglect_30_days_no_interaction",
+    "neglect_duration": 30,
+    "neglect_type": "no_interaction",
+    "description": "主人超过30天无任何互动",
+    "expected_title": "漫长等待",
+    "expected_content": "主人一个月没理我了...",
+    "expected_emotion": "焦虑忧愁",
+    "neglect_event": {
+      "event_type": "neglect_30_days_no_interaction",
+      "user_id": 1,
+      "neglect_duration": 30,
+      "neglect_type": "no_interaction",
+      "event_name": "主人超过1天未对话",
+      "disconnection_type": "完全无互动",
+      "disconnection_days": 30,
+      "memory_status": "on",
+      "last_interaction_date": "2025-09-02T22:32:03.652012"
+    },
+    "diary_entry": {
+      "entry_id": "test_neglect_1756963923.652012",
+      "user_id": 1,
+      "timestamp": "2025-09-03T22:32:03.652012",
+      "event_type": "continuous_neglect",
+      "event_name": "neglect_30_days_no_interaction",
+      "title": "漫长等待",
+      "content": "主人一个月没理我了...",
+      "emotion_tags": [
+        "焦虑忧愁"
+      ],
+      "agent_type": "neglect_agent",
+      "llm_provider": "mock_provider"
+    },
+    "validation_results": {
+      "neglect_duration": "❌ 缺失: 30",
+      "neglect_type": "❌ 缺失: no_interaction",
+      "disconnection_type": "❌ 缺失: 完全无互动",
+      "disconnection_days": "❌ 缺失: 30"
+    }
+  }
+]

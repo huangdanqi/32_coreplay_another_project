@@ -1,0 +1,77 @@
+{
+  "llm_config": {
+    "llm_type": "ollama",
+    "model_name": "llama3.2:3b",
+    "base_url": "http://localhost:11434",
+    "temperature": 0.7,
+    "max_tokens": 1000,
+    "timeout": 30
+  },
+  "interactive_agent_config": {
+    "agent_type": "interactive",
+    "event_types": [
+      "human_machine_interaction",
+      "same_frequency_event",
+      "interaction_event"
+    ],
+    "content_requirements": {
+      "human_machine_interaction": [
+        "Same frequency event name",
+        "Toy owner's nickname",
+        "Close friend's nickname",
+        "Close friend's owner's nickname"
+      ]
+    },
+    "prompt_template": {
+      "system": "You are an interactive agent that processes human-machine interaction events. Generate natural, engaging content based on the event data provided.",
+      "user": "Process the following human-machine interaction event and generate appropriate content: {event_data}"
+    }
+  },
+  "mqtt_config": {
+    "event_types": [
+      "same_frequency_event",
+      "interaction_event",
+      "play_event",
+      "feeding_event"
+    ],
+    "required_fields": [
+      "event_type",
+      "user_id",
+      "interaction_type",
+      "same_frequency_event",
+      "toy_owner_nickname",
+      "close_friend_nickname",
+      "close_friend_owner_nickname"
+    ]
+  },
+  "test_scenarios": [
+    {
+      "name": "Play Together Event",
+      "event_type": "same_frequency_event",
+      "interaction_type": "一起玩耍",
+      "same_frequency_event": "一起玩耍",
+      "toy_owner_nickname": "小明",
+      "close_friend_nickname": "小红",
+      "close_friend_owner_nickname": "小红的妈妈"
+    },
+    {
+      "name": "Petting Event",
+      "event_type": "same_frequency_event",
+      "interaction_type": "摸摸头",
+      "same_frequency_event": "摸摸头",
+      "toy_owner_nickname": "小明",
+      "close_friend_nickname": "小红",
+      "close_friend_owner_nickname": "小红的妈妈"
+    },
+    {
+      "name": "Feeding Event",
+      "event_type": "same_frequency_event",
+      "interaction_type": "喂食",
+      "same_frequency_event": "喂食",
+      "toy_owner_nickname": "小明",
+      "close_friend_nickname": "小红",
+      "close_friend_owner_nickname": "小红的妈妈"
+    }
+  ]
+}
+

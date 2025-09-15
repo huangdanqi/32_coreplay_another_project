@@ -1,0 +1,179 @@
+[
+  {
+    "day": 1,
+    "daily_count": 2,
+    "events": [
+      {
+        "event_num": 1,
+        "event_type": "neglect",
+        "event_name": "neglect_1_day_no_dialogue",
+        "event_details": {
+          "neglect_duration": 1,
+          "neglect_type": "no_dialogue",
+          "disconnection_type": "无对话有互动",
+          "disconnection_days": 1,
+          "memory_status": "on",
+          "last_interaction_date": "2025-09-02T22:51:23.935648"
+        }
+      },
+      {
+        "event_num": 2,
+        "event_type": "dialogue",
+        "event_name": "positive_emotional_dialogue",
+        "event_details": {
+          "dialogue_type": "开心对话",
+          "content": "主人今天心情很好",
+          "duration": "10分钟",
+          "toy_emotion": "开心快乐"
+        }
+      },
+      {
+        "event_num": 3,
+        "event_type": "dialogue",
+        "event_name": "negative_emotional_dialogue",
+        "event_details": {
+          "dialogue_type": "安慰对话",
+          "content": "主人需要安慰",
+          "duration": "15分钟",
+          "toy_emotion": "平静"
+        }
+      }
+    ],
+    "diaries": [
+      {
+        "entry_id": "1_test_event_1756965083.955895_1756965083",
+        "event_type": "neglect",
+        "event_name": "neglect_1_day_no_dialogue",
+        "title": "<think",
+        "content": "，我作为一个可爱的玩具",
+        "emotion_tags": [
+          "平静"
+        ],
+        "timestamp": "2025-09-03T22:51:23.955895",
+        "agent_type": "neglect_agent",
+        "llm_provider": "ollama_qwen3"
+      },
+      {
+        "entry_id": "1_test_event_1756965133.891943_1756965133",
+        "event_type": "dialogue",
+        "event_name": "negative_emotional_dialogue",
+        "title": "<think",
+        "content": "，我作为“可爱的玩具日记",
+        "emotion_tags": [
+          "平静"
+        ],
+        "timestamp": "2025-09-03T22:52:13.891943",
+        "agent_type": "dialogue_agent",
+        "llm_provider": "ollama_qwen3"
+      }
+    ],
+    "summary": {
+      "daily_diary_count": 2,
+      "written_diary_count": 2,
+      "written_event_types": [
+        "neglect",
+        "dialogue"
+      ],
+      "remaining_diaries": 0
+    }
+  },
+  {
+    "day": 2,
+    "daily_count": 4,
+    "events": [
+      {
+        "event_num": 1,
+        "event_type": "dialogue",
+        "event_name": "positive_emotional_dialogue",
+        "event_details": {
+          "dialogue_type": "开心对话",
+          "content": "主人今天心情很好",
+          "duration": "10分钟",
+          "toy_emotion": "开心快乐"
+        }
+      },
+      {
+        "event_num": 2,
+        "event_type": "dialogue",
+        "event_name": "positive_emotional_dialogue",
+        "event_details": {
+          "dialogue_type": "开心对话",
+          "content": "主人今天心情很好",
+          "duration": "10分钟",
+          "toy_emotion": "开心快乐"
+        }
+      },
+      {
+        "event_num": 3,
+        "event_type": "dialogue",
+        "event_name": "negative_emotional_dialogue",
+        "event_details": {
+          "dialogue_type": "安慰对话",
+          "content": "主人需要安慰",
+          "duration": "15分钟",
+          "toy_emotion": "平静"
+        }
+      },
+      {
+        "event_num": 4,
+        "event_type": "human_machine_interaction",
+        "event_name": "liked_interaction_once",
+        "event_details": {
+          "interaction_type": "抚摸",
+          "duration": "5分钟",
+          "user_response": "positive",
+          "toy_emotion": "开心"
+        }
+      }
+    ],
+    "diaries": [
+      {
+        "entry_id": "1_test_event_1756965172.262767_1756965172",
+        "event_type": "dialogue",
+        "event_name": "positive_emotional_dialogue",
+        "title": "<think",
+        "content": "，我作为一个可爱的玩具",
+        "emotion_tags": [
+          "平静"
+        ],
+        "timestamp": "2025-09-03T22:52:52.262767",
+        "agent_type": "dialogue_agent",
+        "llm_provider": "ollama_qwen3"
+      },
+      {
+        "entry_id": "1_test_event_1756965211.856076_1756965211",
+        "event_type": "human_machine_interaction",
+        "event_name": "liked_interaction_once",
+        "title": "<think",
+        "content": "，我作为一个可爱的玩具",
+        "emotion_tags": [
+          "平静"
+        ],
+        "timestamp": "2025-09-03T22:53:31.856076",
+        "agent_type": "interactive_agent",
+        "llm_provider": "ollama_qwen3"
+      }
+    ],
+    "summary": {
+      "daily_diary_count": 4,
+      "written_diary_count": 2,
+      "written_event_types": [
+        "human_machine_interaction",
+        "dialogue"
+      ],
+      "remaining_diaries": 2
+    }
+  },
+  {
+    "day": 3,
+    "daily_count": 0,
+    "events": [],
+    "diaries": [],
+    "summary": {
+      "daily_diary_count": 0,
+      "written_diary_count": 0,
+      "written_event_types": [],
+      "remaining_diaries": 0
+    }
+  }
+]

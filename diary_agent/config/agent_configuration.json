@@ -1,0 +1,67 @@
+{
+  "agents": {
+    "weather_agent": {
+      "class_name": "WeatherAgent",
+      "module_path": "diary_agent.agents.weather_agent",
+      "data_reader": "weather_data_reader",
+      "enabled": true,
+      "priority": 1
+    },
+    "trending_agent": {
+      "class_name": "TrendingAgent",
+      "module_path": "diary_agent.agents.trending_agent",
+      "data_reader": "trending_data_reader",
+      "enabled": true,
+      "priority": 2
+    },
+    "holiday_agent": {
+      "class_name": "HolidayAgent",
+      "module_path": "diary_agent.agents.holiday_agent",
+      "data_reader": "holiday_data_reader",
+      "enabled": true,
+      "priority": 3
+    },
+    "friends_agent": {
+      "class_name": "FriendsAgent",
+      "module_path": "diary_agent.agents.friends_agent",
+      "data_reader": "friends_data_reader",
+      "enabled": true,
+      "priority": 4
+    },
+    "same_frequency_agent": {
+      "class_name": "SameFrequencyAgent",
+      "module_path": "diary_agent.agents.same_frequency_agent",
+      "data_reader": "frequency_data_reader",
+      "enabled": true,
+      "priority": 5
+    },
+    "adoption_agent": {
+      "class_name": "AdoptionAgent",
+      "module_path": "diary_agent.agents.adoption_agent",
+      "data_reader": "adoption_data_reader",
+      "enabled": true,
+      "priority": 6
+    },
+    "interactive_agent": {
+      "class_name": "InteractiveAgent",
+      "module_path": "diary_agent.agents.interactive_agent",
+      "data_reader": "interaction_data_reader",
+      "enabled": true,
+      "priority": 7
+    },
+    "dialogue_agent": {
+      "class_name": "DialogueAgent",
+      "module_path": "diary_agent.agents.dialogue_agent",
+      "data_reader": "dialogue_data_reader",
+      "enabled": true,
+      "priority": 8
+    },
+    "neglect_agent": {
+      "class_name": "NeglectAgent",
+      "module_path": "diary_agent.agents.neglect_agent",
+      "data_reader": "neglect_data_reader",
+      "enabled": true,
+      "priority": 9
+    }
+  }
+}

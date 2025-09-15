@@ -1,0 +1,372 @@
+{
+  "report_timestamp": "2025-09-01 22:36:26.777705",
+  "system_status": {
+    "timestamp": "2025-09-01 22:36:26.668893",
+    "uptime_seconds": 3.3659706115722656,
+    "overall_status": "unhealthy",
+    "health": {
+      "overall_status": "unhealthy",
+      "components": {
+        "llm_manager": {
+          "status": "unhealthy",
+          "message": "LLM Manager check failed: cannot import name 'LLMManager' from 'diary_agent.core.llm_manager' (C:\\Users\\Danqi28_luck_to_play\\Desktop\\Work\\coreplay_agent\\diary_agent\\core\\llm_manager.py)",
+          "response_time_ms": 5.134820938110352,
+          "last_check": "2025-09-01 22:36:26.638009"
+        },
+        "database": {
+          "status": "healthy",
+          "message": "Database connection OK",
+          "response_time_ms": 0.0,
+          "last_check": "2025-09-01 22:36:26.638009"
+        },
+        "sub_agent_manager": {
+          "status": "unhealthy",
+          "message": "Sub-Agent Manager check failed: SubAgentManager.__init__() missing 1 required positional argument: 'llm_manager'",
+          "response_time_ms": 0.0,
+          "last_check": "2025-09-01 22:36:26.638009"
+        },
+        "config_manager": {
+          "status": "unhealthy",
+          "message": "Config Manager check failed: 'ConfigManager' object has no attribute 'llm_config'",
+          "response_time_ms": 30.883073806762695,
+          "last_check": "2025-09-01 22:36:26.668893"
+        },
+        "event_router": {
+          "status": "unhealthy",
+          "message": "Event Router check failed: 'EventRouter' object has no attribute 'event_mappings'",
+          "response_time_ms": 0.0,
+          "last_check": "2025-09-01 22:36:26.668893"
+        },
+        "daily_scheduler": {
+          "status": "unhealthy",
+          "message": "Daily Scheduler check failed: DailyScheduler.__init__() missing 4 required positional arguments: 'event_router', 'sub_agent_manager', 'diary_generator', and 'data_persistence'",
+          "response_time_ms": 0.0,
+          "last_check": "2025-09-01 22:36:26.668893"
+        },
+        "api_service": {
+          "status": "degraded",
+          "message": "API responding slowly",
+          "response_time_ms": 0.0,
+          "last_check": "2025-09-01 22:36:26.668893"
+        },
+        "cache": {
+          "status": "unhealthy",
+          "message": "Health check error: Cache server unreachable",
+          "response_time_ms": 0.0,
+          "last_check": "2025-09-01 22:36:26.668893"
+        }
+      }
+    },
+    "performance": {
+      "duration_minutes": 60,
+      "timestamp": "2025-09-01 22:36:26.668893",
+      "system": {
+        "cpu": {
+          "avg": 52.0,
+          "max": 52.0,
+          "min": 52.0,
+          "current": 52.0
+        },
+        "memory": {
+          "avg": 73.0,
+          "max": 73.0,
+          "min": 73.0,
+          "current": 73.0
+        },
+        "samples": 1
+      },
+      "components": {
+        "web_server": {
+          "status": "no_data"
+        },
+        "database": {
+          "status": "no_data"
+        }
+      },
+      "alerts": []
+    },
+    "alerts": {
+      "active_count": 2,
+      "active_alerts": [
+        {
+          "id": "storage_1756791386603",
+          "title": "Disk Space Low",
+          "severity": "warning",
+          "component": "storage",
+          "timestamp": "2025-09-01 22:36:26.603572",
+          "status": "active"
+        },
+        {
+          "id": "system_1756791386571",
+          "title": "High CPU Usage",
+          "severity": "warning",
+          "component": "system",
+          "timestamp": "2025-09-01 22:36:26.571370",
+          "status": "acknowledged"
+        }
+      ],
+      "statistics": {
+        "total_alerts": 3,
+        "active_alerts": 2,
+        "by_severity": {
+          "warning": 2,
+          "critical": 1
+        },
+        "by_component": {
+          "system": 1,
+          "database": 1,
+          "storage": 1
+        },
+        "by_status": {
+          "acknowledged": 1,
+          "resolved": 1,
+          "active": 1
+        },
+        "resolution_times": [
+          0.036565
+        ],
+        "avg_resolution_time_seconds": 0.036565
+      }
+    },
+    "system_info": {
+      "platform": "Windows-11-10.0.26100-SP0",
+      "python_version": "3.12.7",
+      "cpu_count": 4,
+      "total_memory_gb": 15.777854919433594,
+      "boot_time": "2025-08-28 19:21:18.775687"
+    }
+  },
+  "performance_trends": {
+    "duration_hours": 24,
+    "timestamp": "2025-09-01 22:36:26.777705",
+    "system_trends": {
+      "cpu_usage": [
+        {
+          "timestamp": "2025-09-01 22:36:24.520175",
+          "value": 52.0
+        }
+      ],
+      "memory_usage": [
+        {
+          "timestamp": "2025-09-01 22:36:24.520175",
+          "value": 73.0
+        }
+      ],
+      "disk_usage": [
+        {
+          "timestamp": "2025-09-01 22:36:24.520175",
+          "value": 66.74944148105067
+        }
+      ]
+    },
+    "component_trends": {
+      "web_server": {
+        "response_time": [],
+        "throughput": [],
+        "error_rate": []
+      },
+      "database": {
+        "response_time": [],
+        "throughput": [],
+        "error_rate": []
+      }
+    }
+  },
+  "component_details": {
+    "llm_manager": {
+      "component": "llm_manager",
+      "timestamp": "2025-09-01 22:36:26.777705",
+      "health": {
+        "component": "llm_manager",
+        "status": "HealthStatus.UNHEALTHY",
+        "message": "LLM Manager check failed: cannot import name 'LLMManager' from 'diary_agent.core.llm_manager' (C:\\Users\\Danqi28_luck_to_play\\Desktop\\Work\\coreplay_agent\\diary_agent\\core\\llm_manager.py)",
+        "timestamp": "2025-09-01 22:36:26.638009",
+        "response_time_ms": 5.134820938110352,
+        "details": {
+          "status": "unhealthy",
+          "message": "LLM Manager check failed: cannot import name 'LLMManager' from 'diary_agent.core.llm_manager' (C:\\Users\\Danqi28_luck_to_play\\Desktop\\Work\\coreplay_agent\\diary_agent\\core\\llm_manager.py)"
+        }
+      },
+      "performance": {
+        "history_count": 0,
+        "recent_metrics": []
+      },
+      "alerts": {
+        "recent_count": 0,
+        "recent_alerts": []
+      }
+    },
+    "database": {
+      "component": "database",
+      "timestamp": "2025-09-01 22:36:26.777705",
+      "health": {
+        "component": "database",
+        "status": "HealthStatus.HEALTHY",
+        "message": "Database connection OK",
+        "timestamp": "2025-09-01 22:36:26.638009",
+        "response_time_ms": 0.0,
+        "details": {
+          "status": "healthy",
+          "message": "Database connection OK"
+        }
+      },
+      "performance": {
+        "history_count": 0,
+        "recent_metrics": []
+      },
+      "alerts": {
+        "recent_count": 1,
+        "recent_alerts": [
+          {
+            "id": "database_1756791386588",
+            "title": "Database Connection Failed",
+            "message": "Unable to connect to primary database",
+            "severity": "AlertSeverity.CRITICAL",
+            "component": "database",
+            "timestamp": "2025-09-01 22:36:26.588895",
+            "status": "AlertStatus.RESOLVED",
+            "tags": {},
+            "resolved_at": "2025-09-01 22:36:26.625460",
+            "acknowledged_at": null,
+            "acknowledged_by": null
+          }
+        ]
+      }
+    },
+    "sub_agent_manager": {
+      "component": "sub_agent_manager",
+      "timestamp": "2025-09-01 22:36:26.777705",
+      "health": {
+        "component": "sub_agent_manager",
+        "status": "HealthStatus.UNHEALTHY",
+        "message": "Sub-Agent Manager check failed: SubAgentManager.__init__() missing 1 required positional argument: 'llm_manager'",
+        "timestamp": "2025-09-01 22:36:26.638009",
+        "response_time_ms": 0.0,
+        "details": {
+          "status": "unhealthy",
+          "message": "Sub-Agent Manager check failed: SubAgentManager.__init__() missing 1 required positional argument: 'llm_manager'"
+        }
+      },
+      "performance": {
+        "history_count": 0,
+        "recent_metrics": []
+      },
+      "alerts": {
+        "recent_count": 0,
+        "recent_alerts": []
+      }
+    },
+    "config_manager": {
+      "component": "config_manager",
+      "timestamp": "2025-09-01 22:36:26.777705",
+      "health": {
+        "component": "config_manager",
+        "status": "HealthStatus.UNHEALTHY",
+        "message": "Config Manager check failed: 'ConfigManager' object has no attribute 'llm_config'",
+        "timestamp": "2025-09-01 22:36:26.668893",
+        "response_time_ms": 30.883073806762695,
+        "details": {
+          "status": "unhealthy",
+          "message": "Config Manager check failed: 'ConfigManager' object has no attribute 'llm_config'"
+        }
+      },
+      "performance": {
+        "history_count": 0,
+        "recent_metrics": []
+      },
+      "alerts": {
+        "recent_count": 0,
+        "recent_alerts": []
+      }
+    },
+    "event_router": {
+      "component": "event_router",
+      "timestamp": "2025-09-01 22:36:26.777705",
+      "health": {
+        "component": "event_router",
+        "status": "HealthStatus.UNHEALTHY",
+        "message": "Event Router check failed: 'EventRouter' object has no attribute 'event_mappings'",
+        "timestamp": "2025-09-01 22:36:26.668893",
+        "response_time_ms": 0.0,
+        "details": {
+          "status": "unhealthy",
+          "message": "Event Router check failed: 'EventRouter' object has no attribute 'event_mappings'"
+        }
+      },
+      "performance": {
+        "history_count": 0,
+        "recent_metrics": []
+      },
+      "alerts": {
+        "recent_count": 0,
+        "recent_alerts": []
+      }
+    },
+    "daily_scheduler": {
+      "component": "daily_scheduler",
+      "timestamp": "2025-09-01 22:36:26.777705",
+      "health": {
+        "component": "daily_scheduler",
+        "status": "HealthStatus.UNHEALTHY",
+        "message": "Daily Scheduler check failed: DailyScheduler.__init__() missing 4 required positional arguments: 'event_router', 'sub_agent_manager', 'diary_generator', and 'data_persistence'",
+        "timestamp": "2025-09-01 22:36:26.668893",
+        "response_time_ms": 0.0,
+        "details": {
+          "status": "unhealthy",
+          "message": "Daily Scheduler check failed: DailyScheduler.__init__() missing 4 required positional arguments: 'event_router', 'sub_agent_manager', 'diary_generator', and 'data_persistence'"
+        }
+      },
+      "performance": {
+        "history_count": 0,
+        "recent_metrics": []
+      },
+      "alerts": {
+        "recent_count": 0,
+        "recent_alerts": []
+      }
+    },
+    "api_service": {
+      "component": "api_service",
+      "timestamp": "2025-09-01 22:36:26.777705",
+      "health": {
+        "component": "api_service",
+        "status": "HealthStatus.DEGRADED",
+        "message": "API responding slowly",
+        "timestamp": "2025-09-01 22:36:26.668893",
+        "response_time_ms": 0.0,
+        "details": {
+          "status": "degraded",
+          "message": "API responding slowly"
+        }
+      },
+      "performance": {
+        "history_count": 0,
+        "recent_metrics": []
+      },
+      "alerts": {
+        "recent_count": 0,
+        "recent_alerts": []
+      }
+    },
+    "cache": {
+      "component": "cache",
+      "timestamp": "2025-09-01 22:36:26.777705",
+      "health": {
+        "component": "cache",
+        "status": "HealthStatus.UNHEALTHY",
+        "message": "Health check error: Cache server unreachable",
+        "timestamp": "2025-09-01 22:36:26.668893",
+        "response_time_ms": 0.0,
+        "details": null
+      },
+      "performance": {
+        "history_count": 0,
+        "recent_metrics": []
+      },
+      "alerts": {
+        "recent_count": 0,
+        "recent_alerts": []
+      }
+    }
+  }
+}

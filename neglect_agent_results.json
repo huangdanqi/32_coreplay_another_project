@@ -1,0 +1,416 @@
+[
+  {
+    "scenario_name": "1天无对话",
+    "event_name": "neglect_1_day_no_dialogue",
+    "neglect_duration": 1,
+    "neglect_type": "no_dialogue",
+    "description": "主人超过1天未对话",
+    "expected_emotion": "担忧",
+    "neglect_event": {
+      "event_type": "neglect_1_day_no_dialogue",
+      "user_id": 1,
+      "neglect_duration": 1,
+      "neglect_type": "no_dialogue",
+      "event_name": "主人超过1天未对话",
+      "disconnection_type": "无对话有互动",
+      "disconnection_days": 1,
+      "memory_status": "on",
+      "last_interaction_date": "2025-09-02T22:13:33.552453"
+    },
+    "diary_entry": {
+      "entry_id": "1_test_neglect_1756962813.563651_1756962813",
+      "user_id": 1,
+      "timestamp": "2025-09-03T22:13:33.552453",
+      "event_type": "continuous_neglect",
+      "event_name": "neglect_1_day_no_dialogue",
+      "original_title": "<think",
+      "cleaned_title": "",
+      "original_content": "首先，用户要求我生成一个关于持续忽",
+      "cleaned_content": "，我一个关于持续忽",
+      "emotion_tags": [
+        "平静"
+      ],
+      "agent_type": "neglect_agent",
+      "llm_provider": "ollama_qwen3"
+    },
+    "validation_results": {
+      "neglect_duration": "❌ 缺失: 1",
+      "neglect_type": "❌ 缺失: no_dialogue",
+      "disconnection_type": "❌ 缺失: 无对话有互动",
+      "disconnection_days": "❌ 缺失: 1"
+    },
+    "content_cleaning": {
+      "had_think_tags": true,
+      "had_thinking_patterns": true,
+      "cleaning_applied": true
+    }
+  },
+  {
+    "scenario_name": "1天无互动",
+    "event_name": "neglect_1_day_no_interaction",
+    "neglect_duration": 1,
+    "neglect_type": "no_interaction",
+    "description": "主人超过1天无任何互动",
+    "expected_emotion": "担忧",
+    "neglect_event": {
+      "event_type": "neglect_1_day_no_interaction",
+      "user_id": 1,
+      "neglect_duration": 1,
+      "neglect_type": "no_interaction",
+      "event_name": "主人超过1天未对话",
+      "disconnection_type": "完全无互动",
+      "disconnection_days": 1,
+      "memory_status": "on",
+      "last_interaction_date": "2025-09-02T22:14:31.505397"
+    },
+    "diary_entry": {
+      "entry_id": "1_test_neglect_1756962871.509919_1756962871",
+      "user_id": 1,
+      "timestamp": "2025-09-03T22:14:31.505397",
+      "event_type": "continuous_neglect",
+      "event_name": "neglect_1_day_no_interaction",
+      "original_title": "<think",
+      "cleaned_title": "",
+      "original_content": "首先，用户要求我生成一个关于持续忽",
+      "cleaned_content": "，我一个关于持续忽",
+      "emotion_tags": [
+        "平静"
+      ],
+      "agent_type": "neglect_agent",
+      "llm_provider": "ollama_qwen3"
+    },
+    "validation_results": {
+      "neglect_duration": "❌ 缺失: 1",
+      "neglect_type": "❌ 缺失: no_interaction",
+      "disconnection_type": "❌ 缺失: 完全无互动",
+      "disconnection_days": "❌ 缺失: 1"
+    },
+    "content_cleaning": {
+      "had_think_tags": true,
+      "had_thinking_patterns": true,
+      "cleaning_applied": true
+    }
+  },
+  {
+    "scenario_name": "3天无对话",
+    "event_name": "neglect_3_days_no_dialogue",
+    "neglect_duration": 3,
+    "neglect_type": "no_dialogue",
+    "description": "主人超过3天未对话",
+    "expected_emotion": "悲伤难过",
+    "neglect_event": {
+      "event_type": "neglect_3_days_no_dialogue",
+      "user_id": 1,
+      "neglect_duration": 3,
+      "neglect_type": "no_dialogue",
+      "event_name": "主人超过1天未对话",
+      "disconnection_type": "无对话有互动",
+      "disconnection_days": 3,
+      "memory_status": "on",
+      "last_interaction_date": "2025-09-02T22:15:09.152760"
+    },
+    "diary_entry": {
+      "entry_id": "1_test_neglect_1756962909.227529_1756962909",
+      "user_id": 1,
+      "timestamp": "2025-09-03T22:15:09.152760",
+      "event_type": "continuous_neglect",
+      "event_name": "neglect_3_days_no_dialogue",
+      "original_title": "<think",
+      "cleaned_title": "",
+      "original_content": "首先，用户要求我生成一个关于持续忽",
+      "cleaned_content": "，我一个关于持续忽",
+      "emotion_tags": [
+        "平静"
+      ],
+      "agent_type": "neglect_agent",
+      "llm_provider": "ollama_qwen3"
+    },
+    "validation_results": {
+      "neglect_duration": "❌ 缺失: 3",
+      "neglect_type": "❌ 缺失: no_dialogue",
+      "disconnection_type": "❌ 缺失: 无对话有互动",
+      "disconnection_days": "❌ 缺失: 3"
+    },
+    "content_cleaning": {
+      "had_think_tags": true,
+      "had_thinking_patterns": true,
+      "cleaning_applied": true
+    }
+  },
+  {
+    "scenario_name": "3天无互动",
+    "event_name": "neglect_3_days_no_interaction",
+    "neglect_duration": 3,
+    "neglect_type": "no_interaction",
+    "description": "主人超过3天无任何互动",
+    "expected_emotion": "悲伤难过",
+    "neglect_event": {
+      "event_type": "neglect_3_days_no_interaction",
+      "user_id": 1,
+      "neglect_duration": 3,
+      "neglect_type": "no_interaction",
+      "event_name": "主人超过1天未对话",
+      "disconnection_type": "完全无互动",
+      "disconnection_days": 3,
+      "memory_status": "on",
+      "last_interaction_date": "2025-09-02T22:15:45.720416"
+    },
+    "diary_entry": {
+      "entry_id": "1_test_neglect_1756962945.722429_1756962945",
+      "user_id": 1,
+      "timestamp": "2025-09-03T22:15:45.720416",
+      "event_type": "continuous_neglect",
+      "event_name": "neglect_3_days_no_interaction",
+      "original_title": "<think",
+      "cleaned_title": "",
+      "original_content": "首先，用户要求我生成一个关于持续忽",
+      "cleaned_content": "，我一个关于持续忽",
+      "emotion_tags": [
+        "平静"
+      ],
+      "agent_type": "neglect_agent",
+      "llm_provider": "ollama_qwen3"
+    },
+    "validation_results": {
+      "neglect_duration": "❌ 缺失: 3",
+      "neglect_type": "❌ 缺失: no_interaction",
+      "disconnection_type": "❌ 缺失: 完全无互动",
+      "disconnection_days": "❌ 缺失: 3"
+    },
+    "content_cleaning": {
+      "had_think_tags": true,
+      "had_thinking_patterns": true,
+      "cleaning_applied": true
+    }
+  },
+  {
+    "scenario_name": "7天无对话",
+    "event_name": "neglect_7_days_no_dialogue",
+    "neglect_duration": 7,
+    "neglect_type": "no_dialogue",
+    "description": "主人超过7天未对话",
+    "expected_emotion": "悲伤难过",
+    "neglect_event": {
+      "event_type": "neglect_7_days_no_dialogue",
+      "user_id": 1,
+      "neglect_duration": 7,
+      "neglect_type": "no_dialogue",
+      "event_name": "主人超过1天未对话",
+      "disconnection_type": "无对话有互动",
+      "disconnection_days": 7,
+      "memory_status": "on",
+      "last_interaction_date": "2025-09-02T22:16:22.424977"
+    },
+    "diary_entry": {
+      "entry_id": "1_test_neglect_1756962982.428251_1756962982",
+      "user_id": 1,
+      "timestamp": "2025-09-03T22:16:22.424977",
+      "event_type": "continuous_neglect",
+      "event_name": "neglect_7_days_no_dialogue",
+      "original_title": "<think",
+      "cleaned_title": "",
+      "original_content": "首先，用户要求我生成一个关于持续忽",
+      "cleaned_content": "，我一个关于持续忽",
+      "emotion_tags": [
+        "平静"
+      ],
+      "agent_type": "neglect_agent",
+      "llm_provider": "ollama_qwen3"
+    },
+    "validation_results": {
+      "neglect_duration": "❌ 缺失: 7",
+      "neglect_type": "❌ 缺失: no_dialogue",
+      "disconnection_type": "❌ 缺失: 无对话有互动",
+      "disconnection_days": "❌ 缺失: 7"
+    },
+    "content_cleaning": {
+      "had_think_tags": true,
+      "had_thinking_patterns": true,
+      "cleaning_applied": true
+    }
+  },
+  {
+    "scenario_name": "7天无互动",
+    "event_name": "neglect_7_days_no_interaction",
+    "neglect_duration": 7,
+    "neglect_type": "no_interaction",
+    "description": "主人超过7天无任何互动",
+    "expected_emotion": "悲伤难过",
+    "neglect_event": {
+      "event_type": "neglect_7_days_no_interaction",
+      "user_id": 1,
+      "neglect_duration": 7,
+      "neglect_type": "no_interaction",
+      "event_name": "主人超过1天未对话",
+      "disconnection_type": "完全无互动",
+      "disconnection_days": 7,
+      "memory_status": "on",
+      "last_interaction_date": "2025-09-02T22:17:01.587830"
+    },
+    "diary_entry": {
+      "entry_id": "1_test_neglect_1756963021.610538_1756963021",
+      "user_id": 1,
+      "timestamp": "2025-09-03T22:17:01.587830",
+      "event_type": "continuous_neglect",
+      "event_name": "neglect_7_days_no_interaction",
+      "original_title": "<think",
+      "cleaned_title": "",
+      "original_content": "首先，用户要求生成一个关于玩具被主",
+      "cleaned_content": "，一个关于玩具被主",
+      "emotion_tags": [
+        "平静"
+      ],
+      "agent_type": "neglect_agent",
+      "llm_provider": "ollama_qwen3"
+    },
+    "validation_results": {
+      "neglect_duration": "❌ 缺失: 7",
+      "neglect_type": "❌ 缺失: no_interaction",
+      "disconnection_type": "❌ 缺失: 完全无互动",
+      "disconnection_days": "❌ 缺失: 7"
+    },
+    "content_cleaning": {
+      "had_think_tags": true,
+      "had_thinking_patterns": true,
+      "cleaning_applied": true
+    }
+  },
+  {
+    "scenario_name": "15天无互动",
+    "event_name": "neglect_15_days_no_interaction",
+    "neglect_duration": 15,
+    "neglect_type": "no_interaction",
+    "description": "主人超过15天无任何互动",
+    "expected_emotion": "焦虑忧愁",
+    "neglect_event": {
+      "event_type": "neglect_15_days_no_interaction",
+      "user_id": 1,
+      "neglect_duration": 15,
+      "neglect_type": "no_interaction",
+      "event_name": "主人超过1天未对话",
+      "disconnection_type": "完全无互动",
+      "disconnection_days": 15,
+      "memory_status": "on",
+      "last_interaction_date": "2025-09-02T22:17:38.176015"
+    },
+    "diary_entry": {
+      "entry_id": "1_test_neglect_1756963058.242003_1756963058",
+      "user_id": 1,
+      "timestamp": "2025-09-03T22:17:38.176015",
+      "event_type": "continuous_neglect",
+      "event_name": "neglect_15_days_no_interaction",
+      "original_title": "<think",
+      "cleaned_title": "",
+      "original_content": "首先，用户要求我生成一个关于持续忽",
+      "cleaned_content": "，我一个关于持续忽",
+      "emotion_tags": [
+        "平静"
+      ],
+      "agent_type": "neglect_agent",
+      "llm_provider": "ollama_qwen3"
+    },
+    "validation_results": {
+      "neglect_duration": "❌ 缺失: 15",
+      "neglect_type": "❌ 缺失: no_interaction",
+      "disconnection_type": "❌ 缺失: 完全无互动",
+      "disconnection_days": "❌ 缺失: 15"
+    },
+    "content_cleaning": {
+      "had_think_tags": true,
+      "had_thinking_patterns": true,
+      "cleaning_applied": true
+    }
+  },
+  {
+    "scenario_name": "30天无对话",
+    "event_name": "neglect_30_days_no_dialogue",
+    "neglect_duration": 30,
+    "neglect_type": "no_dialogue",
+    "description": "主人超过30天未对话",
+    "expected_emotion": "焦虑忧愁",
+    "neglect_event": {
+      "event_type": "neglect_30_days_no_dialogue",
+      "user_id": 1,
+      "neglect_duration": 30,
+      "neglect_type": "no_dialogue",
+      "event_name": "主人超过1天未对话",
+      "disconnection_type": "无对话有互动",
+      "disconnection_days": 30,
+      "memory_status": "on",
+      "last_interaction_date": "2025-09-02T22:18:17.289377"
+    },
+    "diary_entry": {
+      "entry_id": "1_test_neglect_1756963097.294214_1756963097",
+      "user_id": 1,
+      "timestamp": "2025-09-03T22:18:17.289377",
+      "event_type": "continuous_neglect",
+      "event_name": "neglect_30_days_no_dialogue",
+      "original_title": "<think",
+      "cleaned_title": "",
+      "original_content": "首先，用户要求我生成一个关于持续忽",
+      "cleaned_content": "，我一个关于持续忽",
+      "emotion_tags": [
+        "平静"
+      ],
+      "agent_type": "neglect_agent",
+      "llm_provider": "ollama_qwen3"
+    },
+    "validation_results": {
+      "neglect_duration": "❌ 缺失: 30",
+      "neglect_type": "❌ 缺失: no_dialogue",
+      "disconnection_type": "❌ 缺失: 无对话有互动",
+      "disconnection_days": "❌ 缺失: 30"
+    },
+    "content_cleaning": {
+      "had_think_tags": true,
+      "had_thinking_patterns": true,
+      "cleaning_applied": true
+    }
+  },
+  {
+    "scenario_name": "30天无互动",
+    "event_name": "neglect_30_days_no_interaction",
+    "neglect_duration": 30,
+    "neglect_type": "no_interaction",
+    "description": "主人超过30天无任何互动",
+    "expected_emotion": "焦虑忧愁",
+    "neglect_event": {
+      "event_type": "neglect_30_days_no_interaction",
+      "user_id": 1,
+      "neglect_duration": 30,
+      "neglect_type": "no_interaction",
+      "event_name": "主人超过1天未对话",
+      "disconnection_type": "完全无互动",
+      "disconnection_days": 30,
+      "memory_status": "on",
+      "last_interaction_date": "2025-09-02T22:18:55.871260"
+    },
+    "diary_entry": {
+      "entry_id": "1_test_neglect_1756963135.872271_1756963135",
+      "user_id": 1,
+      "timestamp": "2025-09-03T22:18:55.871260",
+      "event_type": "continuous_neglect",
+      "event_name": "neglect_30_days_no_interaction",
+      "original_title": "<think",
+      "cleaned_title": "",
+      "original_content": "首先，用户要求我生成一个关于持续忽",
+      "cleaned_content": "，我一个关于持续忽",
+      "emotion_tags": [
+        "平静"
+      ],
+      "agent_type": "neglect_agent",
+      "llm_provider": "ollama_qwen3"
+    },
+    "validation_results": {
+      "neglect_duration": "❌ 缺失: 30",
+      "neglect_type": "❌ 缺失: no_interaction",
+      "disconnection_type": "❌ 缺失: 完全无互动",
+      "disconnection_days": "❌ 缺失: 30"
+    },
+    "content_cleaning": {
+      "had_think_tags": true,
+      "had_thinking_patterns": true,
+      "cleaning_applied": true
+    }
+  }
+]

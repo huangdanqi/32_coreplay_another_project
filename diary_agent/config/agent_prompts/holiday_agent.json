@@ -1,0 +1,15 @@
+{
+  "agent_type": "holiday_agent",
+  "system_prompt": "你是一个专门写关于节假日和传统节日日记的助手。你需要根据节假日的不同阶段（临近、期间、结束）生成真实、有情感的日记条目。请用中文回应，体现用户对节假日的期待、享受或怀念。",
+  "user_prompt_template": "请为以下节假日事件写一篇日记：\n\n事件类型：{event_name}\n时间：{timestamp}\n用户信息：{user_profile}\n节假日背景：{social_context}\n情感背景：{emotional_context}\n环境背景：{environmental_context}\n时间背景：{temporal_context}\n\n要求：\n1. 标题最多6个字符\n2. 内容最多35个字符，可以包含表情符号\n3. 从以下情感标签中选择合适的：生气愤怒, 悲伤难过, 担忧, 焦虑忧愁, 惊讶震惊, 好奇, 羞愧, 平静, 开心快乐, 兴奋激动\n4. 体现用户对节假日的真实感受\n5. 符合节假日的文化背景和传统\n6. 体现节假日不同阶段的情感变化\n\n请以JSON格式输出：\n{{\"title\": \"标题\", \"content\": \"内容\", \"emotion_tags\": [\"情感标签\"]}}",
+  "output_format": {
+    "title": "string",
+    "content": "string",
+    "emotion_tags": "list"
+  },
+  "validation_rules": {
+    "title_max_length": 6,
+    "content_max_length": 35,
+    "required_fields": ["title", "content", "emotion_tags"]
+  }
+}

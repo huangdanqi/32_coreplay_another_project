@@ -1,0 +1,314 @@
+[
+  {
+    "scenario": {
+      "event_name": "made_new_friend",
+      "event_type": "friend",
+      "friend_nickname": "小猫咪",
+      "friend_owner_nickname": "小明",
+      "interaction_type": "打招呼",
+      "toy_preference": "喜欢",
+      "description": "新朋友小猫咪(主人:小明)打招呼，玩具很喜欢"
+    },
+    "diary_entry": {
+      "title": "新朋友",
+      "content": "今天认识了新朋友，很开心",
+      "emotion_tags": [
+        "开心快乐"
+      ],
+      "timestamp": "2025-09-03 00:22:29",
+      "llm_provider": "ollama_qwen3"
+    },
+    "context_data": {
+      "event_name": "made_new_friend",
+      "friend_count": 0,
+      "user_role": "clam",
+      "emotional_tone": "positive",
+      "emotional_intensity": 1.3
+    },
+    "validation": {
+      "title_length_valid": true,
+      "content_length_valid": true,
+      "friend_nickname_included": false,
+      "friend_owner_nickname_included": false,
+      "preference_context_appropriate": true,
+      "emotion_appropriate": true,
+      "emotion_tags_valid": true,
+      "required_fields_present": true,
+      "overall_pass": false
+    },
+    "success": false
+  },
+  {
+    "scenario": {
+      "event_name": "friend_deleted",
+      "event_type": "friend",
+      "friend_nickname": "小狗",
+      "friend_owner_nickname": "小红",
+      "interaction_type": "删除好友",
+      "toy_preference": "不喜欢",
+      "description": "朋友小狗(主人:小红)删除了好友，玩具很失落"
+    },
+    "diary_entry": {
+      "title": "失去朋",
+      "content": "朋友关系结束了，有些失落",
+      "emotion_tags": [
+        "悲伤难过"
+      ],
+      "timestamp": "2025-09-03 00:22:36",
+      "llm_provider": "ollama_qwen3"
+    },
+    "context_data": {
+      "event_name": "friend_deleted",
+      "friend_count": 0,
+      "user_role": "clam",
+      "emotional_tone": "negative",
+      "emotional_intensity": 1.3
+    },
+    "validation": {
+      "title_length_valid": true,
+      "content_length_valid": true,
+      "friend_nickname_included": false,
+      "friend_owner_nickname_included": false,
+      "preference_context_appropriate": true,
+      "emotion_appropriate": true,
+      "emotion_tags_valid": true,
+      "required_fields_present": true,
+      "overall_pass": false
+    },
+    "success": false
+  },
+  {
+    "scenario": {
+      "event_name": "liked_single",
+      "event_type": "friend",
+      "friend_nickname": "小兔子",
+      "friend_owner_nickname": "小李",
+      "interaction_type": "摸头",
+      "toy_preference": "喜欢",
+      "description": "朋友小兔子(主人:小李)摸头1次，玩具很喜欢"
+    },
+    "diary_entry": {
+      "title": "开心",
+      "content": "朋友摸头了我，很开心😊",
+      "emotion_tags": [
+        "开心快乐"
+      ],
+      "timestamp": "2025-09-03 00:22:43",
+      "llm_provider": "ollama_qwen3"
+    },
+    "context_data": {
+      "event_name": "liked_single",
+      "friend_count": 0,
+      "user_role": "clam",
+      "emotional_tone": "positive",
+      "emotional_intensity": 1.0
+    },
+    "validation": {
+      "title_length_valid": true,
+      "content_length_valid": true,
+      "friend_nickname_included": false,
+      "friend_owner_nickname_included": false,
+      "preference_context_appropriate": true,
+      "emotion_appropriate": true,
+      "emotion_tags_valid": true,
+      "required_fields_present": true,
+      "overall_pass": false
+    },
+    "success": false
+  },
+  {
+    "scenario": {
+      "event_name": "liked_3_to_5",
+      "event_type": "friend",
+      "friend_nickname": "小熊",
+      "friend_owner_nickname": "小王",
+      "interaction_type": "拥抱",
+      "toy_preference": "喜欢",
+      "description": "朋友小熊(主人:小王)拥抱3次，玩具很喜欢"
+    },
+    "diary_entry": {
+      "title": "很开心",
+      "content": "朋友连续拥抱，心情很好😄",
+      "emotion_tags": [
+        "开心快乐"
+      ],
+      "timestamp": "2025-09-03 00:22:53",
+      "llm_provider": "ollama_qwen3"
+    },
+    "context_data": {
+      "event_name": "liked_3_to_5",
+      "friend_count": 0,
+      "user_role": "clam",
+      "emotional_tone": "positive",
+      "emotional_intensity": 1.2
+    },
+    "validation": {
+      "title_length_valid": true,
+      "content_length_valid": true,
+      "friend_nickname_included": false,
+      "friend_owner_nickname_included": false,
+      "preference_context_appropriate": true,
+      "emotion_appropriate": true,
+      "emotion_tags_valid": true,
+      "required_fields_present": true,
+      "overall_pass": false
+    },
+    "success": false
+  },
+  {
+    "scenario": {
+      "event_name": "liked_5_plus",
+      "event_type": "friend",
+      "friend_nickname": "小鸭子",
+      "friend_owner_nickname": "小张",
+      "interaction_type": "亲吻",
+      "toy_preference": "喜欢",
+      "description": "朋友小鸭子(主人:小张)亲吻6次，玩具超喜欢"
+    },
+    "diary_entry": {
+      "title": "超开心",
+      "content": "朋友亲吻了好多次！太开心了🎉",
+      "emotion_tags": [
+        "兴奋激动"
+      ],
+      "timestamp": "2025-09-03 00:23:02",
+      "llm_provider": "ollama_qwen3"
+    },
+    "context_data": {
+      "event_name": "liked_5_plus",
+      "friend_count": 0,
+      "user_role": "clam",
+      "emotional_tone": "positive",
+      "emotional_intensity": 1.5
+    },
+    "validation": {
+      "title_length_valid": true,
+      "content_length_valid": true,
+      "friend_nickname_included": false,
+      "friend_owner_nickname_included": false,
+      "preference_context_appropriate": true,
+      "emotion_appropriate": true,
+      "emotion_tags_valid": true,
+      "required_fields_present": true,
+      "overall_pass": false
+    },
+    "success": false
+  },
+  {
+    "scenario": {
+      "event_name": "disliked_single",
+      "event_type": "friend",
+      "friend_nickname": "小老虎",
+      "friend_owner_nickname": "小陈",
+      "interaction_type": "拍打",
+      "toy_preference": "不喜欢",
+      "description": "朋友小老虎(主人:小陈)拍打1次，玩具不喜欢"
+    },
+    "diary_entry": {
+      "title": "有点烦",
+      "content": "朋友拍打了，不太喜欢",
+      "emotion_tags": [
+        "焦虑忧愁"
+      ],
+      "timestamp": "2025-09-03 00:23:12",
+      "llm_provider": "ollama_qwen3"
+    },
+    "context_data": {
+      "event_name": "disliked_single",
+      "friend_count": 0,
+      "user_role": "clam",
+      "emotional_tone": "positive",
+      "emotional_intensity": 1.0
+    },
+    "validation": {
+      "title_length_valid": true,
+      "content_length_valid": true,
+      "friend_nickname_included": false,
+      "friend_owner_nickname_included": false,
+      "preference_context_appropriate": true,
+      "emotion_appropriate": false,
+      "emotion_tags_valid": true,
+      "required_fields_present": true,
+      "overall_pass": false
+    },
+    "success": false
+  },
+  {
+    "scenario": {
+      "event_name": "disliked_3_to_5",
+      "event_type": "friend",
+      "friend_nickname": "小狮子",
+      "friend_owner_nickname": "小刘",
+      "interaction_type": "摇晃",
+      "toy_preference": "不喜欢",
+      "description": "朋友小狮子(主人:小刘)摇晃4次，玩具不喜欢"
+    },
+    "diary_entry": {
+      "title": "不开心",
+      "content": "朋友摇晃太多次了😞",
+      "emotion_tags": [
+        "悲伤难过"
+      ],
+      "timestamp": "2025-09-03 00:23:22",
+      "llm_provider": "ollama_qwen3"
+    },
+    "context_data": {
+      "event_name": "disliked_3_to_5",
+      "friend_count": 0,
+      "user_role": "clam",
+      "emotional_tone": "positive",
+      "emotional_intensity": 1.2
+    },
+    "validation": {
+      "title_length_valid": true,
+      "content_length_valid": true,
+      "friend_nickname_included": false,
+      "friend_owner_nickname_included": false,
+      "preference_context_appropriate": true,
+      "emotion_appropriate": false,
+      "emotion_tags_valid": true,
+      "required_fields_present": true,
+      "overall_pass": false
+    },
+    "success": false
+  },
+  {
+    "scenario": {
+      "event_name": "disliked_5_plus",
+      "event_type": "friend",
+      "friend_nickname": "小鳄鱼",
+      "friend_owner_nickname": "小赵",
+      "interaction_type": "拉扯",
+      "toy_preference": "不喜欢",
+      "description": "朋友小鳄鱼(主人:小赵)拉扯7次，玩具很生气"
+    },
+    "diary_entry": {
+      "title": "很生气",
+      "content": "朋友一直拉扯，很烦😠",
+      "emotion_tags": [
+        "生气愤怒"
+      ],
+      "timestamp": "2025-09-03 00:23:31",
+      "llm_provider": "ollama_qwen3"
+    },
+    "context_data": {
+      "event_name": "disliked_5_plus",
+      "friend_count": 0,
+      "user_role": "clam",
+      "emotional_tone": "positive",
+      "emotional_intensity": 1.5
+    },
+    "validation": {
+      "title_length_valid": true,
+      "content_length_valid": true,
+      "friend_nickname_included": false,
+      "friend_owner_nickname_included": false,
+      "preference_context_appropriate": true,
+      "emotion_appropriate": false,
+      "emotion_tags_valid": true,
+      "required_fields_present": true,
+      "overall_pass": false
+    },
+    "success": false
+  }
+]

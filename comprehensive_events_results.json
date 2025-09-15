@@ -1,0 +1,272 @@
+[
+  {
+    "scenario_name": "喜欢互动1次",
+    "event_name": "liked_interaction_once",
+    "interaction_type": "一起玩耍",
+    "same_frequency_event": "一起玩耍",
+    "description": "小明和小红同时触发了一起玩耍的互动（喜欢1次）",
+    "expected_content": "和小红一起玩耍真开心！",
+    "expected_emotion": "开心快乐",
+    "mqtt_event": {
+      "event_type": "same_frequency_event",
+      "user_id": 1,
+      "interaction_type": "一起玩耍",
+      "same_frequency_event": "一起玩耍",
+      "toy_owner_nickname": "小明",
+      "close_friend_nickname": "小红",
+      "close_friend_owner_nickname": "小红的妈妈"
+    },
+    "diary_entry": {
+      "entry_id": "1_test_event_1756960104.996239_1756960104",
+      "user_id": 1,
+      "timestamp": "2025-09-03T21:28:24.961138",
+      "event_type": "human_machine_interaction",
+      "event_name": "liked_interaction_once",
+      "original_title": "<think",
+      "cleaned_title": "互动记录",
+      "original_content": "首先，用户要求我作为智能玩具的日记",
+      "cleaned_content": "和小红一起玩耍真开心！",
+      "emotion_tags": [
+        "平静"
+      ],
+      "agent_type": "interactive",
+      "llm_provider": "ollama_qwen3"
+    },
+    "validation_results": {
+      "same_frequency_event": "✅ 找到: 一起玩耍",
+      "toy_owner_nickname": "❌ 缺失: 小明",
+      "close_friend_nickname": "✅ 找到: 小红",
+      "close_friend_owner_nickname": "❌ 缺失: 小红的妈妈"
+    },
+    "content_cleaning": {
+      "had_think_tags": true,
+      "had_thinking_patterns": true,
+      "cleaning_applied": true
+    }
+  },
+  {
+    "scenario_name": "喜欢互动3-5次",
+    "event_name": "liked_interaction_3_to_5_times",
+    "interaction_type": "摸摸头",
+    "same_frequency_event": "摸摸头",
+    "description": "小明和小红同时被摸了头（喜欢3-5次）",
+    "expected_content": "被摸摸头好舒服！",
+    "expected_emotion": "开心快乐",
+    "mqtt_event": {
+      "event_type": "same_frequency_event",
+      "user_id": 1,
+      "interaction_type": "摸摸头",
+      "same_frequency_event": "摸摸头",
+      "toy_owner_nickname": "小明",
+      "close_friend_nickname": "小红",
+      "close_friend_owner_nickname": "小红的妈妈"
+    },
+    "diary_entry": {
+      "entry_id": "1_test_event_1756960166.317482_1756960166",
+      "user_id": 1,
+      "timestamp": "2025-09-03T21:29:26.313710",
+      "event_type": "human_machine_interaction",
+      "event_name": "liked_interaction_3_to_5_times",
+      "original_title": "<think",
+      "cleaned_title": "互动记录",
+      "original_content": "首先，用户要求我生成一个智能玩具的",
+      "cleaned_content": "被摸摸头好舒服！",
+      "emotion_tags": [
+        "平静"
+      ],
+      "agent_type": "interactive",
+      "llm_provider": "ollama_qwen3"
+    },
+    "validation_results": {
+      "same_frequency_event": "✅ 找到: 摸摸头",
+      "toy_owner_nickname": "❌ 缺失: 小明",
+      "close_friend_nickname": "❌ 缺失: 小红",
+      "close_friend_owner_nickname": "❌ 缺失: 小红的妈妈"
+    },
+    "content_cleaning": {
+      "had_think_tags": true,
+      "had_thinking_patterns": true,
+      "cleaning_applied": true
+    }
+  },
+  {
+    "scenario_name": "喜欢互动超过5次",
+    "event_name": "liked_interaction_over_5_times",
+    "interaction_type": "喂食",
+    "same_frequency_event": "喂食",
+    "description": "小明和小红同时被喂食（喜欢超过5次）",
+    "expected_content": "和小红一起吃饭真棒！",
+    "expected_emotion": "兴奋激动",
+    "mqtt_event": {
+      "event_type": "same_frequency_event",
+      "user_id": 1,
+      "interaction_type": "喂食",
+      "same_frequency_event": "喂食",
+      "toy_owner_nickname": "小明",
+      "close_friend_nickname": "小红",
+      "close_friend_owner_nickname": "小红的妈妈"
+    },
+    "diary_entry": {
+      "entry_id": "1_test_event_1756960204.628449_1756960204",
+      "user_id": 1,
+      "timestamp": "2025-09-03T21:30:04.628449",
+      "event_type": "human_machine_interaction",
+      "event_name": "liked_interaction_over_5_times",
+      "original_title": "<think",
+      "cleaned_title": "互动记录",
+      "original_content": "首先，用户要求我作为智能玩具的日记",
+      "cleaned_content": "和小红一起吃饭真棒！",
+      "emotion_tags": [
+        "平静"
+      ],
+      "agent_type": "interactive",
+      "llm_provider": "ollama_qwen3"
+    },
+    "validation_results": {
+      "same_frequency_event": "❌ 缺失: 喂食",
+      "toy_owner_nickname": "❌ 缺失: 小明",
+      "close_friend_nickname": "✅ 找到: 小红",
+      "close_friend_owner_nickname": "❌ 缺失: 小红的妈妈"
+    },
+    "content_cleaning": {
+      "had_think_tags": true,
+      "had_thinking_patterns": true,
+      "cleaning_applied": true
+    }
+  },
+  {
+    "scenario_name": "不喜欢互动1次",
+    "event_name": "disliked_interaction_once",
+    "interaction_type": "强制抱抱",
+    "same_frequency_event": "强制抱抱",
+    "description": "小明和小红被强制抱抱（不喜欢1次）",
+    "expected_content": "不想被强制抱抱！",
+    "expected_emotion": "生气愤怒",
+    "mqtt_event": {
+      "event_type": "same_frequency_event",
+      "user_id": 1,
+      "interaction_type": "强制抱抱",
+      "same_frequency_event": "强制抱抱",
+      "toy_owner_nickname": "小明",
+      "close_friend_nickname": "小红",
+      "close_friend_owner_nickname": "小红的妈妈"
+    },
+    "diary_entry": {
+      "entry_id": "1_test_event_1756960243.165705_1756960243",
+      "user_id": 1,
+      "timestamp": "2025-09-03T21:30:43.163306",
+      "event_type": "human_machine_interaction",
+      "event_name": "disliked_interaction_once",
+      "original_title": "<think",
+      "cleaned_title": "互动记录",
+      "original_content": "首先，用户要求我生成一个智能玩具的",
+      "cleaned_content": "不想被强制抱抱！",
+      "emotion_tags": [
+        "平静"
+      ],
+      "agent_type": "interactive",
+      "llm_provider": "ollama_qwen3"
+    },
+    "validation_results": {
+      "same_frequency_event": "✅ 找到: 强制抱抱",
+      "toy_owner_nickname": "❌ 缺失: 小明",
+      "close_friend_nickname": "❌ 缺失: 小红",
+      "close_friend_owner_nickname": "❌ 缺失: 小红的妈妈"
+    },
+    "content_cleaning": {
+      "had_think_tags": true,
+      "had_thinking_patterns": true,
+      "cleaning_applied": true
+    }
+  },
+  {
+    "scenario_name": "不喜欢互动3-5次",
+    "event_name": "disliked_interaction_3_to_5_times",
+    "interaction_type": "强制洗澡",
+    "same_frequency_event": "强制洗澡",
+    "description": "小明和小红被强制洗澡（不喜欢3-5次）",
+    "expected_content": "讨厌被强制洗澡！",
+    "expected_emotion": "生气愤怒",
+    "mqtt_event": {
+      "event_type": "same_frequency_event",
+      "user_id": 1,
+      "interaction_type": "强制洗澡",
+      "same_frequency_event": "强制洗澡",
+      "toy_owner_nickname": "小明",
+      "close_friend_nickname": "小红",
+      "close_friend_owner_nickname": "小红的妈妈"
+    },
+    "diary_entry": {
+      "entry_id": "1_test_event_1756960281.480791_1756960281",
+      "user_id": 1,
+      "timestamp": "2025-09-03T21:31:21.479711",
+      "event_type": "human_machine_interaction",
+      "event_name": "disliked_interaction_3_to_5_times",
+      "original_title": "<think",
+      "cleaned_title": "互动记录",
+      "original_content": "首先，用户要求我生成一个智能玩具的",
+      "cleaned_content": "讨厌被强制洗澡！",
+      "emotion_tags": [
+        "平静"
+      ],
+      "agent_type": "interactive",
+      "llm_provider": "ollama_qwen3"
+    },
+    "validation_results": {
+      "same_frequency_event": "✅ 找到: 强制洗澡",
+      "toy_owner_nickname": "❌ 缺失: 小明",
+      "close_friend_nickname": "❌ 缺失: 小红",
+      "close_friend_owner_nickname": "❌ 缺失: 小红的妈妈"
+    },
+    "content_cleaning": {
+      "had_think_tags": true,
+      "had_thinking_patterns": true,
+      "cleaning_applied": true
+    }
+  },
+  {
+    "scenario_name": "中性互动超过5次",
+    "event_name": "neutral_interaction_over_5_times",
+    "interaction_type": "例行检查",
+    "same_frequency_event": "例行检查",
+    "description": "小明和小红进行例行检查（中性超过5次）",
+    "expected_content": "例行检查完成了。",
+    "expected_emotion": "平静",
+    "mqtt_event": {
+      "event_type": "same_frequency_event",
+      "user_id": 1,
+      "interaction_type": "例行检查",
+      "same_frequency_event": "例行检查",
+      "toy_owner_nickname": "小明",
+      "close_friend_nickname": "小红",
+      "close_friend_owner_nickname": "小红的妈妈"
+    },
+    "diary_entry": {
+      "entry_id": "1_test_event_1756960321.753835_1756960321",
+      "user_id": 1,
+      "timestamp": "2025-09-03T21:32:01.752105",
+      "event_type": "human_machine_interaction",
+      "event_name": "neutral_interaction_over_5_times",
+      "original_title": "<think",
+      "cleaned_title": "互动记录",
+      "original_content": "首先，用户要求我作为一个智能玩具的",
+      "cleaned_content": "例行检查完成了。",
+      "emotion_tags": [
+        "平静"
+      ],
+      "agent_type": "interactive",
+      "llm_provider": "ollama_qwen3"
+    },
+    "validation_results": {
+      "same_frequency_event": "✅ 找到: 例行检查",
+      "toy_owner_nickname": "❌ 缺失: 小明",
+      "close_friend_nickname": "❌ 缺失: 小红",
+      "close_friend_owner_nickname": "❌ 缺失: 小红的妈妈"
+    },
+    "content_cleaning": {
+      "had_think_tags": true,
+      "had_thinking_patterns": true,
+      "cleaning_applied": true
+    }
+  }
+]

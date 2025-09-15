@@ -1,0 +1,517 @@
+[
+  {
+    "scenario": {
+      "holiday": {
+        "name": "春节",
+        "date": "2026-01-29",
+        "duration": 7,
+        "type": "traditional_major",
+        "cultural_significance": "highest",
+        "typical_activities": [
+          "团圆",
+          "拜年",
+          "放鞭炮",
+          "吃年夜饭"
+        ]
+      },
+      "test_date": "2026-01-26T00:00:00",
+      "days_offset": -3,
+      "event_name": "approaching_holiday",
+      "time_description": "3天前",
+      "expected_content_includes": [
+        "春节",
+        "3天前"
+      ]
+    },
+    "diary_entry": {
+      "title": "期待",
+      "content": "Unknown快到了，很期待🎉",
+      "emotion_tags": [
+        "开心快乐"
+      ],
+      "timestamp": "2026-01-26 00:00:00",
+      "llm_provider": "ollama_qwen3"
+    },
+    "context_data": {
+      "holiday_name": "春节",
+      "days_to_holiday": 3,
+      "holiday_timing": "no_holiday",
+      "emotional_tone": "anticipation_excitement",
+      "cultural_significance": "low"
+    },
+    "validation": {
+      "title_length_valid": true,
+      "content_length_valid": true,
+      "holiday_name_included": true,
+      "time_context_appropriate": true,
+      "emotion_appropriate": true,
+      "emotion_tags_valid": true,
+      "required_fields_present": true,
+      "overall_pass": true
+    },
+    "success": true
+  },
+  {
+    "scenario": {
+      "holiday": {
+        "name": "春节",
+        "date": "2026-01-29",
+        "duration": 7,
+        "type": "traditional_major",
+        "cultural_significance": "highest",
+        "typical_activities": [
+          "团圆",
+          "拜年",
+          "放鞭炮",
+          "吃年夜饭"
+        ]
+      },
+      "test_date": "2026-01-28T00:00:00",
+      "days_offset": -1,
+      "event_name": "approaching_holiday",
+      "time_description": "1天前",
+      "expected_content_includes": [
+        "春节",
+        "1天前"
+      ]
+    },
+    "diary_entry": {
+      "title": "期待",
+      "content": "Unknown快到了，很期待🎉",
+      "emotion_tags": [
+        "开心快乐"
+      ],
+      "timestamp": "2026-01-28 00:00:00",
+      "llm_provider": "ollama_qwen3"
+    },
+    "context_data": {
+      "holiday_name": "春节",
+      "days_to_holiday": 1,
+      "holiday_timing": "no_holiday",
+      "emotional_tone": "anticipation_excitement",
+      "cultural_significance": "low"
+    },
+    "validation": {
+      "title_length_valid": true,
+      "content_length_valid": true,
+      "holiday_name_included": true,
+      "time_context_appropriate": true,
+      "emotion_appropriate": true,
+      "emotion_tags_valid": true,
+      "required_fields_present": true,
+      "overall_pass": true
+    },
+    "success": true
+  },
+  {
+    "scenario": {
+      "holiday": {
+        "name": "春节",
+        "date": "2026-01-29",
+        "duration": 7,
+        "type": "traditional_major",
+        "cultural_significance": "highest",
+        "typical_activities": [
+          "团圆",
+          "拜年",
+          "放鞭炮",
+          "吃年夜饭"
+        ]
+      },
+      "test_date": "2026-01-29T00:00:00",
+      "days_offset": 0,
+      "event_name": "during_holiday",
+      "time_description": "节日当天",
+      "expected_content_includes": [
+        "春节",
+        "节日当天"
+      ]
+    },
+    "diary_entry": {
+      "title": "假期",
+      "content": "今天是Unknown，很开心😄",
+      "emotion_tags": [
+        "开心快乐"
+      ],
+      "timestamp": "2026-01-29 00:00:00",
+      "llm_provider": "ollama_qwen3"
+    },
+    "context_data": {
+      "holiday_name": "春节",
+      "days_to_holiday": 0,
+      "holiday_timing": "no_holiday",
+      "emotional_tone": "joy_celebration",
+      "cultural_significance": "low"
+    },
+    "validation": {
+      "title_length_valid": true,
+      "content_length_valid": true,
+      "holiday_name_included": true,
+      "time_context_appropriate": true,
+      "emotion_appropriate": true,
+      "emotion_tags_valid": true,
+      "required_fields_present": true,
+      "overall_pass": true
+    },
+    "success": true
+  },
+  {
+    "scenario": {
+      "holiday": {
+        "name": "春节",
+        "date": "2026-01-29",
+        "duration": 7,
+        "type": "traditional_major",
+        "cultural_significance": "highest",
+        "typical_activities": [
+          "团圆",
+          "拜年",
+          "放鞭炮",
+          "吃年夜饭"
+        ]
+      },
+      "test_date": "2026-01-30T00:00:00",
+      "days_offset": 1,
+      "event_name": "holiday_ends",
+      "time_description": "节后1天",
+      "expected_content_includes": [
+        "春节",
+        "节后1天"
+      ]
+    },
+    "diary_entry": {
+      "title": "结束",
+      "content": "Unknown结束了，有点不舍😔",
+      "emotion_tags": [
+        "平静"
+      ],
+      "timestamp": "2026-01-30 00:00:00",
+      "llm_provider": "ollama_qwen3"
+    },
+    "context_data": {
+      "holiday_name": "春节",
+      "days_to_holiday": -1,
+      "holiday_timing": "no_holiday",
+      "emotional_tone": "nostalgia_sadness",
+      "cultural_significance": "low"
+    },
+    "validation": {
+      "title_length_valid": true,
+      "content_length_valid": true,
+      "holiday_name_included": true,
+      "time_context_appropriate": true,
+      "emotion_appropriate": true,
+      "emotion_tags_valid": true,
+      "required_fields_present": true,
+      "overall_pass": true
+    },
+    "success": true
+  },
+  {
+    "scenario": {
+      "holiday": {
+        "name": "春节",
+        "date": "2026-01-29",
+        "duration": 7,
+        "type": "traditional_major",
+        "cultural_significance": "highest",
+        "typical_activities": [
+          "团圆",
+          "拜年",
+          "放鞭炮",
+          "吃年夜饭"
+        ]
+      },
+      "test_date": "2026-02-01T00:00:00",
+      "days_offset": 3,
+      "event_name": "holiday_ends",
+      "time_description": "节后3天",
+      "expected_content_includes": [
+        "春节",
+        "节后3天"
+      ]
+    },
+    "diary_entry": {
+      "title": "结束",
+      "content": "Unknown结束了，有点不舍😔",
+      "emotion_tags": [
+        "平静"
+      ],
+      "timestamp": "2026-02-01 00:00:00",
+      "llm_provider": "ollama_qwen3"
+    },
+    "context_data": {
+      "holiday_name": "春节",
+      "days_to_holiday": -3,
+      "holiday_timing": "no_holiday",
+      "emotional_tone": "nostalgia_sadness",
+      "cultural_significance": "low"
+    },
+    "validation": {
+      "title_length_valid": true,
+      "content_length_valid": true,
+      "holiday_name_included": true,
+      "time_context_appropriate": true,
+      "emotion_appropriate": true,
+      "emotion_tags_valid": true,
+      "required_fields_present": true,
+      "overall_pass": true
+    },
+    "success": true
+  },
+  {
+    "scenario": {
+      "holiday": {
+        "name": "清明节",
+        "date": "2026-04-05",
+        "duration": 1,
+        "type": "traditional_cultural",
+        "cultural_significance": "high",
+        "typical_activities": [
+          "扫墓",
+          "踏青",
+          "祭祖"
+        ]
+      },
+      "test_date": "2026-04-02T00:00:00",
+      "days_offset": -3,
+      "event_name": "approaching_holiday",
+      "time_description": "3天前",
+      "expected_content_includes": [
+        "清明节",
+        "3天前"
+      ]
+    },
+    "diary_entry": {
+      "title": "期待",
+      "content": "清明节快到了，还有3天😊",
+      "emotion_tags": [
+        "开心快乐"
+      ],
+      "timestamp": "2026-04-02 00:00:00",
+      "llm_provider": "ollama_qwen3"
+    },
+    "context_data": {
+      "holiday_name": "清明节",
+      "days_to_holiday": 3,
+      "holiday_timing": "before_holiday_3_days",
+      "emotional_tone": "anticipation_excitement",
+      "cultural_significance": "high"
+    },
+    "validation": {
+      "title_length_valid": true,
+      "content_length_valid": true,
+      "holiday_name_included": true,
+      "time_context_appropriate": true,
+      "emotion_appropriate": true,
+      "emotion_tags_valid": true,
+      "required_fields_present": true,
+      "overall_pass": true
+    },
+    "success": true
+  },
+  {
+    "scenario": {
+      "holiday": {
+        "name": "清明节",
+        "date": "2026-04-05",
+        "duration": 1,
+        "type": "traditional_cultural",
+        "cultural_significance": "high",
+        "typical_activities": [
+          "扫墓",
+          "踏青",
+          "祭祖"
+        ]
+      },
+      "test_date": "2026-04-04T00:00:00",
+      "days_offset": -1,
+      "event_name": "approaching_holiday",
+      "time_description": "1天前",
+      "expected_content_includes": [
+        "清明节",
+        "1天前"
+      ]
+    },
+    "diary_entry": {
+      "title": "期待",
+      "content": "清明节快到了，还有1天😊",
+      "emotion_tags": [
+        "开心快乐"
+      ],
+      "timestamp": "2026-04-04 00:00:00",
+      "llm_provider": "ollama_qwen3"
+    },
+    "context_data": {
+      "holiday_name": "清明节",
+      "days_to_holiday": 1,
+      "holiday_timing": "before_holiday_1_days",
+      "emotional_tone": "anticipation_excitement",
+      "cultural_significance": "high"
+    },
+    "validation": {
+      "title_length_valid": true,
+      "content_length_valid": true,
+      "holiday_name_included": true,
+      "time_context_appropriate": true,
+      "emotion_appropriate": true,
+      "emotion_tags_valid": true,
+      "required_fields_present": true,
+      "overall_pass": true
+    },
+    "success": true
+  },
+  {
+    "scenario": {
+      "holiday": {
+        "name": "清明节",
+        "date": "2026-04-05",
+        "duration": 1,
+        "type": "traditional_cultural",
+        "cultural_significance": "high",
+        "typical_activities": [
+          "扫墓",
+          "踏青",
+          "祭祖"
+        ]
+      },
+      "test_date": "2026-04-05T00:00:00",
+      "days_offset": 0,
+      "event_name": "during_holiday",
+      "time_description": "节日当天",
+      "expected_content_includes": [
+        "清明节",
+        "节日当天"
+      ]
+    },
+    "diary_entry": {
+      "title": "假期",
+      "content": "今天是清明节，很开心😄",
+      "emotion_tags": [
+        "开心快乐"
+      ],
+      "timestamp": "2026-04-05 00:00:00",
+      "llm_provider": "ollama_qwen3"
+    },
+    "context_data": {
+      "holiday_name": "清明节",
+      "days_to_holiday": 0,
+      "holiday_timing": "on_holiday",
+      "emotional_tone": "joy_celebration",
+      "cultural_significance": "high"
+    },
+    "validation": {
+      "title_length_valid": true,
+      "content_length_valid": true,
+      "holiday_name_included": true,
+      "time_context_appropriate": true,
+      "emotion_appropriate": true,
+      "emotion_tags_valid": true,
+      "required_fields_present": true,
+      "overall_pass": true
+    },
+    "success": true
+  },
+  {
+    "scenario": {
+      "holiday": {
+        "name": "清明节",
+        "date": "2026-04-05",
+        "duration": 1,
+        "type": "traditional_cultural",
+        "cultural_significance": "high",
+        "typical_activities": [
+          "扫墓",
+          "踏青",
+          "祭祖"
+        ]
+      },
+      "test_date": "2026-04-06T00:00:00",
+      "days_offset": 1,
+      "event_name": "holiday_ends",
+      "time_description": "节后1天",
+      "expected_content_includes": [
+        "清明节",
+        "节后1天"
+      ]
+    },
+    "diary_entry": {
+      "title": "结束",
+      "content": "清明节结束了，有点不舍😔",
+      "emotion_tags": [
+        "平静"
+      ],
+      "timestamp": "2026-04-06 00:00:00",
+      "llm_provider": "ollama_qwen3"
+    },
+    "context_data": {
+      "holiday_name": "清明节",
+      "days_to_holiday": -1,
+      "holiday_timing": "after_holiday_1_days",
+      "emotional_tone": "nostalgia_sadness",
+      "cultural_significance": "high"
+    },
+    "validation": {
+      "title_length_valid": true,
+      "content_length_valid": true,
+      "holiday_name_included": true,
+      "time_context_appropriate": true,
+      "emotion_appropriate": true,
+      "emotion_tags_valid": true,
+      "required_fields_present": true,
+      "overall_pass": true
+    },
+    "success": true
+  },
+  {
+    "scenario": {
+      "holiday": {
+        "name": "清明节",
+        "date": "2026-04-05",
+        "duration": 1,
+        "type": "traditional_cultural",
+        "cultural_significance": "high",
+        "typical_activities": [
+          "扫墓",
+          "踏青",
+          "祭祖"
+        ]
+      },
+      "test_date": "2026-04-08T00:00:00",
+      "days_offset": 3,
+      "event_name": "holiday_ends",
+      "time_description": "节后3天",
+      "expected_content_includes": [
+        "清明节",
+        "节后3天"
+      ]
+    },
+    "diary_entry": {
+      "title": "结束",
+      "content": "清明节结束了，有点不舍😔",
+      "emotion_tags": [
+        "平静"
+      ],
+      "timestamp": "2026-04-08 00:00:00",
+      "llm_provider": "ollama_qwen3"
+    },
+    "context_data": {
+      "holiday_name": "清明节",
+      "days_to_holiday": -3,
+      "holiday_timing": "after_holiday_3_days",
+      "emotional_tone": "nostalgia_sadness",
+      "cultural_significance": "high"
+    },
+    "validation": {
+      "title_length_valid": true,
+      "content_length_valid": true,
+      "holiday_name_included": true,
+      "time_context_appropriate": true,
+      "emotion_appropriate": true,
+      "emotion_tags_valid": true,
+      "required_fields_present": true,
+      "overall_pass": true
+    },
+    "success": true
+  }
+]

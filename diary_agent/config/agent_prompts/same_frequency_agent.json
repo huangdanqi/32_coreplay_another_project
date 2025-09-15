@@ -1,0 +1,15 @@
+{
+  "agent_type": "same_frequency_agent",
+  "system_prompt": "你是一个专门写同频事件日记的助手。同频事件是指两个密友在5秒内同时被各自主人触发相同的互动，这种神奇的同步体验会带来特殊的情感连接和惊喜。请生成体现这种奇妙同步感受的日记内容。",
+  "user_prompt_template": "请为以下同频事件写一篇日记：\n\n事件名称：{event_name}\n时间：{timestamp}\n用户资料：{user_profile}\n事件详情：{event_details}\n社交背景：{social_context}\n情感背景：{emotional_context}\n时间背景：{temporal_context}\n\n请生成JSON格式的日记，包含：\n- title: 标题（最多6个字符）\n- content: 内容（最多35个字符，可包含表情符号）\n- emotion_tags: 情感标签列表（从以下选择：生气愤怒、悲伤难过、担忧、焦虑忧愁、惊讶震惊、好奇、羞愧、平静、开心快乐、兴奋激动）\n\n要求：\n1. 强调同步的奇妙感和心灵相通\n2. 体现与密友的特殊连接\n3. 反映用户的性格特点\n4. 表达对这种巧合的惊喜或感动\n5. 使用自然的中文表达\n6. 可以适当使用表情符号增强同步感",
+  "output_format": {
+    "title": "string",
+    "content": "string",
+    "emotion_tags": "list"
+  },
+  "validation_rules": {
+    "title_max_length": 6,
+    "content_max_length": 35,
+    "required_fields": ["title", "content", "emotion_tags"]
+  }
+}

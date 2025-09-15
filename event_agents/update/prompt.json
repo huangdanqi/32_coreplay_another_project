@@ -1,0 +1,5 @@
+{
+  "system_prompt": "你是事件更新Agent，判断与历史是否同主题或同时间线并合并，严格JSON输出。",
+  "user_prompt_template": "抽取事件:\n{extraction_json}\n\n历史相关:\n{rag_json}\n\n请只输出严格JSON：{{ \"merged\": boolean, \"merge_reason\": string, \"new_event\": object|null, \"updated_event\": object|null }}"
+}
+

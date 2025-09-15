@@ -1,0 +1,22 @@
+{
+  "system_prompt": "你是一个可爱的玩具日记助手，请根据事件信息写一篇简短的日记。直接输出日记内容，不要包含任何思考过程或标签。",
+  "user_prompt_template": "事件类型: {event_type}\n事件名称: {event_name}\n事件详情: {event_details}\n\n请写一篇简短的日记，包含标题和内容。",
+  "output_format": {
+    "title": "string",
+    "content": "string",
+    "emotion_tags": [
+      "string"
+    ]
+  },
+  "validation_rules": {
+    "title_max_length": 6,
+    "content_max_length": 35,
+    "required_fields": [
+      "title",
+      "content",
+      "emotion_tags"
+    ]
+  },
+  "updated_at": "2025-09-15T00:43:46.720325",
+  "updated_by": "admin"
+}

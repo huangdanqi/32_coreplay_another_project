@@ -1,0 +1,48 @@
+[
+  {
+    "sensor_type": "accelerometer",
+    "x": 0.1,
+    "y": 0.2,
+    "z": 9.8,
+    "count": 3,
+    "device_id": "toy_001"
+  },
+  {
+    "sensor_type": "touch",
+    "value": 1,
+    "duration": 3.5,
+    "pressure": 20,
+    "device_id": "toy_001"
+  },
+  {
+    "sensor_type": "gyroscope",
+    "yaw": 120,
+    "pitch": 10,
+    "roll": 5,
+    "device_id": "toy_001"
+  },
+  {
+    "sensor_type": "gesture",
+    "gesture_type": "wave",
+    "confidence": 0.95,
+    "device_id": "toy_001"
+  },
+  {
+    "sensor_type": "sound",
+    "decibel": 75,
+    "frequency": 1200,
+    "device_id": "toy_001"
+  },
+  {
+    "sensor_type": "light",
+    "lux": 600,
+    "brightness": 85,
+    "device_id": "toy_001"
+  },
+  {
+    "sensor_type": "temperature",
+    "temperature": 32,
+    "humidity": 65,
+    "device_id": "toy_001"
+  }
+]

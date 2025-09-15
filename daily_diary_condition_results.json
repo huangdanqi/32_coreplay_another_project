@@ -1,0 +1,397 @@
+[
+  {
+    "day": 1,
+    "daily_count": 4,
+    "events": [
+      {
+        "event_num": 1,
+        "event_type": "dialogue",
+        "event_name": "positive_emotional_dialogue",
+        "title": "开心对话",
+        "content": "和主人聊天真开心！",
+        "emotion": "开心快乐"
+      },
+      {
+        "event_num": 2,
+        "event_type": "dialogue",
+        "event_name": "negative_emotional_dialogue",
+        "title": "安慰主人",
+        "content": "安慰主人好重要！",
+        "emotion": "平静"
+      },
+      {
+        "event_num": 3,
+        "event_type": "dialogue",
+        "event_name": "positive_emotional_dialogue",
+        "title": "开心对话",
+        "content": "和主人聊天真开心！",
+        "emotion": "开心快乐"
+      },
+      {
+        "event_num": 4,
+        "event_type": "neglect",
+        "event_name": "neglect_1_day_no_dialogue",
+        "title": "思念主人",
+        "content": "主人一天没理我了...",
+        "emotion": "担忧"
+      },
+      {
+        "event_num": 5,
+        "event_type": "dialogue",
+        "event_name": "negative_emotional_dialogue",
+        "title": "安慰主人",
+        "content": "安慰主人好重要！",
+        "emotion": "平静"
+      },
+      {
+        "event_num": 6,
+        "event_type": "dialogue",
+        "event_name": "negative_emotional_dialogue",
+        "title": "安慰主人",
+        "content": "安慰主人好重要！",
+        "emotion": "平静"
+      },
+      {
+        "event_num": 7,
+        "event_type": "dialogue",
+        "event_name": "negative_emotional_dialogue",
+        "title": "安慰主人",
+        "content": "安慰主人好重要！",
+        "emotion": "平静"
+      },
+      {
+        "event_num": 8,
+        "event_type": "human_machine_interaction",
+        "event_name": "liked_interaction_over_5_times",
+        "title": "喂食时光",
+        "content": "和小红一起吃饭真棒！",
+        "emotion": "开心快乐"
+      }
+    ],
+    "diaries": [
+      {
+        "entry_id": "diary_1756964426.978375",
+        "event_type": "neglect",
+        "event_name": "neglect_1_day_no_dialogue",
+        "title": "思念主人",
+        "content": "主人一天没理我了...",
+        "emotion": "担忧",
+        "timestamp": "2025-09-03T22:40:26.978375"
+      },
+      {
+        "entry_id": "diary_1756964426.97939",
+        "event_type": "dialogue",
+        "event_name": "negative_emotional_dialogue",
+        "title": "安慰主人",
+        "content": "安慰主人好重要！",
+        "emotion": "平静",
+        "timestamp": "2025-09-03T22:40:26.979390"
+      },
+      {
+        "entry_id": "diary_1756964426.97939",
+        "event_type": "human_machine_interaction",
+        "event_name": "liked_interaction_over_5_times",
+        "title": "喂食时光",
+        "content": "和小红一起吃饭真棒！",
+        "emotion": "开心快乐",
+        "timestamp": "2025-09-03T22:40:26.979390"
+      }
+    ],
+    "summary": {
+      "daily_diary_count": 4,
+      "written_diary_count": 3,
+      "written_event_types": [
+        "human_machine_interaction",
+        "dialogue",
+        "neglect"
+      ],
+      "remaining_diaries": 1
+    }
+  },
+  {
+    "day": 2,
+    "daily_count": 2,
+    "events": [
+      {
+        "event_num": 1,
+        "event_type": "neglect",
+        "event_name": "neglect_3_days_no_interaction",
+        "title": "寂寞时光",
+        "content": "主人三天没互动了...",
+        "emotion": "悲伤难过"
+      },
+      {
+        "event_num": 2,
+        "event_type": "human_machine_interaction",
+        "event_name": "liked_interaction_over_5_times",
+        "title": "喂食时光",
+        "content": "和小红一起吃饭真棒！",
+        "emotion": "开心快乐"
+      },
+      {
+        "event_num": 3,
+        "event_type": "human_machine_interaction",
+        "event_name": "liked_interaction_once",
+        "title": "同频惊喜",
+        "content": "和小红一起玩耍真开心！",
+        "emotion": "开心快乐"
+      },
+      {
+        "event_num": 4,
+        "event_type": "neglect",
+        "event_name": "neglect_1_day_no_dialogue",
+        "title": "思念主人",
+        "content": "主人一天没理我了...",
+        "emotion": "担忧"
+      },
+      {
+        "event_num": 5,
+        "event_type": "neglect",
+        "event_name": "neglect_3_days_no_interaction",
+        "title": "寂寞时光",
+        "content": "主人三天没互动了...",
+        "emotion": "悲伤难过"
+      }
+    ],
+    "diaries": [
+      {
+        "entry_id": "diary_1756964426.98994",
+        "event_type": "human_machine_interaction",
+        "event_name": "liked_interaction_over_5_times",
+        "title": "喂食时光",
+        "content": "和小红一起吃饭真棒！",
+        "emotion": "开心快乐",
+        "timestamp": "2025-09-03T22:40:26.989940"
+      }
+    ],
+    "summary": {
+      "daily_diary_count": 2,
+      "written_diary_count": 1,
+      "written_event_types": [
+        "human_machine_interaction"
+      ],
+      "remaining_diaries": 1
+    }
+  },
+  {
+    "day": 3,
+    "daily_count": 4,
+    "events": [
+      {
+        "event_num": 1,
+        "event_type": "human_machine_interaction",
+        "event_name": "liked_interaction_over_5_times",
+        "title": "喂食时光",
+        "content": "和小红一起吃饭真棒！",
+        "emotion": "开心快乐"
+      },
+      {
+        "event_num": 2,
+        "event_type": "dialogue",
+        "event_name": "positive_emotional_dialogue",
+        "title": "开心对话",
+        "content": "和主人聊天真开心！",
+        "emotion": "开心快乐"
+      },
+      {
+        "event_num": 3,
+        "event_type": "neglect",
+        "event_name": "neglect_7_days_no_dialogue",
+        "title": "一周沉默",
+        "content": "主人一周没说话了...",
+        "emotion": "悲伤难过"
+      },
+      {
+        "event_num": 4,
+        "event_type": "neglect",
+        "event_name": "neglect_3_days_no_interaction",
+        "title": "寂寞时光",
+        "content": "主人三天没互动了...",
+        "emotion": "悲伤难过"
+      },
+      {
+        "event_num": 5,
+        "event_type": "human_machine_interaction",
+        "event_name": "liked_interaction_over_5_times",
+        "title": "喂食时光",
+        "content": "和小红一起吃饭真棒！",
+        "emotion": "开心快乐"
+      }
+    ],
+    "diaries": [
+      {
+        "entry_id": "diary_1756964426.992401",
+        "event_type": "human_machine_interaction",
+        "event_name": "liked_interaction_over_5_times",
+        "title": "喂食时光",
+        "content": "和小红一起吃饭真棒！",
+        "emotion": "开心快乐",
+        "timestamp": "2025-09-03T22:40:26.992401"
+      }
+    ],
+    "summary": {
+      "daily_diary_count": 4,
+      "written_diary_count": 1,
+      "written_event_types": [
+        "human_machine_interaction"
+      ],
+      "remaining_diaries": 3
+    }
+  },
+  {
+    "day": 4,
+    "daily_count": 4,
+    "events": [
+      {
+        "event_num": 1,
+        "event_type": "dialogue",
+        "event_name": "negative_emotional_dialogue",
+        "title": "安慰主人",
+        "content": "安慰主人好重要！",
+        "emotion": "平静"
+      },
+      {
+        "event_num": 2,
+        "event_type": "dialogue",
+        "event_name": "positive_emotional_dialogue",
+        "title": "开心对话",
+        "content": "和主人聊天真开心！",
+        "emotion": "开心快乐"
+      },
+      {
+        "event_num": 3,
+        "event_type": "dialogue",
+        "event_name": "negative_emotional_dialogue",
+        "title": "安慰主人",
+        "content": "安慰主人好重要！",
+        "emotion": "平静"
+      },
+      {
+        "event_num": 4,
+        "event_type": "dialogue",
+        "event_name": "positive_emotional_dialogue",
+        "title": "开心对话",
+        "content": "和主人聊天真开心！",
+        "emotion": "开心快乐"
+      },
+      {
+        "event_num": 5,
+        "event_type": "neglect",
+        "event_name": "neglect_1_day_no_dialogue",
+        "title": "思念主人",
+        "content": "主人一天没理我了...",
+        "emotion": "担忧"
+      },
+      {
+        "event_num": 6,
+        "event_type": "neglect",
+        "event_name": "neglect_3_days_no_interaction",
+        "title": "寂寞时光",
+        "content": "主人三天没互动了...",
+        "emotion": "悲伤难过"
+      },
+      {
+        "event_num": 7,
+        "event_type": "dialogue",
+        "event_name": "positive_emotional_dialogue",
+        "title": "开心对话",
+        "content": "和主人聊天真开心！",
+        "emotion": "开心快乐"
+      },
+      {
+        "event_num": 8,
+        "event_type": "neglect",
+        "event_name": "neglect_7_days_no_dialogue",
+        "title": "一周沉默",
+        "content": "主人一周没说话了...",
+        "emotion": "悲伤难过"
+      }
+    ],
+    "diaries": [
+      {
+        "entry_id": "diary_1756964426.994964",
+        "event_type": "dialogue",
+        "event_name": "negative_emotional_dialogue",
+        "title": "安慰主人",
+        "content": "安慰主人好重要！",
+        "emotion": "平静",
+        "timestamp": "2025-09-03T22:40:26.994964"
+      },
+      {
+        "entry_id": "diary_1756964426.996181",
+        "event_type": "neglect",
+        "event_name": "neglect_1_day_no_dialogue",
+        "title": "思念主人",
+        "content": "主人一天没理我了...",
+        "emotion": "担忧",
+        "timestamp": "2025-09-03T22:40:26.996181"
+      }
+    ],
+    "summary": {
+      "daily_diary_count": 4,
+      "written_diary_count": 2,
+      "written_event_types": [
+        "dialogue",
+        "neglect"
+      ],
+      "remaining_diaries": 2
+    }
+  },
+  {
+    "day": 5,
+    "daily_count": 2,
+    "events": [
+      {
+        "event_num": 1,
+        "event_type": "human_machine_interaction",
+        "event_name": "liked_interaction_once",
+        "title": "同频惊喜",
+        "content": "和小红一起玩耍真开心！",
+        "emotion": "开心快乐"
+      },
+      {
+        "event_num": 2,
+        "event_type": "neglect",
+        "event_name": "neglect_3_days_no_interaction",
+        "title": "寂寞时光",
+        "content": "主人三天没互动了...",
+        "emotion": "悲伤难过"
+      },
+      {
+        "event_num": 3,
+        "event_type": "neglect",
+        "event_name": "neglect_1_day_no_dialogue",
+        "title": "思念主人",
+        "content": "主人一天没理我了...",
+        "emotion": "担忧"
+      },
+      {
+        "event_num": 4,
+        "event_type": "human_machine_interaction",
+        "event_name": "liked_interaction_3_to_5_times",
+        "title": "摸摸头",
+        "content": "被摸摸头好舒服！",
+        "emotion": "平静"
+      }
+    ],
+    "diaries": [
+      {
+        "entry_id": "diary_1756964427.005017",
+        "event_type": "neglect",
+        "event_name": "neglect_3_days_no_interaction",
+        "title": "寂寞时光",
+        "content": "主人三天没互动了...",
+        "emotion": "悲伤难过",
+        "timestamp": "2025-09-03T22:40:27.005017"
+      }
+    ],
+    "summary": {
+      "daily_diary_count": 2,
+      "written_diary_count": 1,
+      "written_event_types": [
+        "neglect"
+      ],
+      "remaining_diaries": 1
+    }
+  }
+]

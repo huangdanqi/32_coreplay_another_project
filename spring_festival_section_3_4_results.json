@@ -1,0 +1,310 @@
+[
+  {
+    "scenario": {
+      "holiday": {
+        "name": "春节",
+        "date": "2025-01-01",
+        "duration": 7
+      },
+      "test_date": "2024-12-29T00:00:00",
+      "days_offset": -3,
+      "event_name": "approaching_holiday",
+      "time_description": "3天前",
+      "expected_content_includes": [
+        "春节",
+        "3天前"
+      ]
+    },
+    "diary_entry": {
+      "title": "期待",
+      "content": "国庆节快到了，很期待🎉",
+      "emotion_tags": [
+        "开心快乐"
+      ],
+      "timestamp": "2024-12-29 00:00:00",
+      "llm_provider": "ollama_qwen3"
+    },
+    "context_data": {
+      "holiday_name": "国庆节",
+      "days_to_holiday": -89,
+      "holiday_timing": "after_holiday_89_days",
+      "emotional_tone": "anticipation_excitement",
+      "cultural_significance": "very_high"
+    },
+    "validation": {
+      "title_length_valid": true,
+      "content_length_valid": true,
+      "spring_festival_name_included": false,
+      "time_context_appropriate": true,
+      "emotion_appropriate": true,
+      "emotion_tags_valid": true,
+      "required_fields_present": true,
+      "overall_pass": false
+    },
+    "success": false
+  },
+  {
+    "scenario": {
+      "holiday": {
+        "name": "春节",
+        "date": "2025-01-01",
+        "duration": 7
+      },
+      "test_date": "2024-12-30T00:00:00",
+      "days_offset": -2,
+      "event_name": "approaching_holiday",
+      "time_description": "2天前",
+      "expected_content_includes": [
+        "春节",
+        "2天前"
+      ]
+    },
+    "diary_entry": {
+      "title": "期待",
+      "content": "国庆节快到了，很期待🎉",
+      "emotion_tags": [
+        "开心快乐"
+      ],
+      "timestamp": "2024-12-30 00:00:00",
+      "llm_provider": "ollama_qwen3"
+    },
+    "context_data": {
+      "holiday_name": "国庆节",
+      "days_to_holiday": -90,
+      "holiday_timing": "after_holiday_90_days",
+      "emotional_tone": "anticipation_excitement",
+      "cultural_significance": "very_high"
+    },
+    "validation": {
+      "title_length_valid": true,
+      "content_length_valid": true,
+      "spring_festival_name_included": false,
+      "time_context_appropriate": true,
+      "emotion_appropriate": true,
+      "emotion_tags_valid": true,
+      "required_fields_present": true,
+      "overall_pass": false
+    },
+    "success": false
+  },
+  {
+    "scenario": {
+      "holiday": {
+        "name": "春节",
+        "date": "2025-01-01",
+        "duration": 7
+      },
+      "test_date": "2024-12-31T00:00:00",
+      "days_offset": -1,
+      "event_name": "approaching_holiday",
+      "time_description": "1天前",
+      "expected_content_includes": [
+        "春节",
+        "1天前"
+      ]
+    },
+    "diary_entry": {
+      "title": "期待",
+      "content": "国庆节快到了，很期待🎉",
+      "emotion_tags": [
+        "开心快乐"
+      ],
+      "timestamp": "2024-12-31 00:00:00",
+      "llm_provider": "ollama_qwen3"
+    },
+    "context_data": {
+      "holiday_name": "国庆节",
+      "days_to_holiday": -91,
+      "holiday_timing": "after_holiday_91_days",
+      "emotional_tone": "anticipation_excitement",
+      "cultural_significance": "very_high"
+    },
+    "validation": {
+      "title_length_valid": true,
+      "content_length_valid": true,
+      "spring_festival_name_included": false,
+      "time_context_appropriate": true,
+      "emotion_appropriate": true,
+      "emotion_tags_valid": true,
+      "required_fields_present": true,
+      "overall_pass": false
+    },
+    "success": false
+  },
+  {
+    "scenario": {
+      "holiday": {
+        "name": "春节",
+        "date": "2025-01-01",
+        "duration": 7
+      },
+      "test_date": "2025-01-01T00:00:00",
+      "days_offset": 0,
+      "event_name": "during_holiday",
+      "time_description": "节日当天",
+      "expected_content_includes": [
+        "春节",
+        "节日当天"
+      ]
+    },
+    "diary_entry": {
+      "title": "假期",
+      "content": "今天是春节，很开心😄",
+      "emotion_tags": [
+        "开心快乐"
+      ],
+      "timestamp": "2025-01-01 00:00:00",
+      "llm_provider": "ollama_qwen3"
+    },
+    "context_data": {
+      "holiday_name": "春节",
+      "days_to_holiday": 0,
+      "holiday_timing": "on_holiday",
+      "emotional_tone": "joy_celebration",
+      "cultural_significance": "highest"
+    },
+    "validation": {
+      "title_length_valid": true,
+      "content_length_valid": true,
+      "spring_festival_name_included": true,
+      "time_context_appropriate": true,
+      "emotion_appropriate": true,
+      "emotion_tags_valid": true,
+      "required_fields_present": true,
+      "overall_pass": true
+    },
+    "success": true
+  },
+  {
+    "scenario": {
+      "holiday": {
+        "name": "春节",
+        "date": "2025-01-01",
+        "duration": 7
+      },
+      "test_date": "2025-01-02T00:00:00",
+      "days_offset": 1,
+      "event_name": "holiday_ends",
+      "time_description": "节后1天",
+      "expected_content_includes": [
+        "春节",
+        "节后1天"
+      ]
+    },
+    "diary_entry": {
+      "title": "结束",
+      "content": "春节结束了，有点不舍😔",
+      "emotion_tags": [
+        "平静"
+      ],
+      "timestamp": "2025-01-02 00:00:00",
+      "llm_provider": "ollama_qwen3"
+    },
+    "context_data": {
+      "holiday_name": "春节",
+      "days_to_holiday": -1,
+      "holiday_timing": "after_holiday_1_days",
+      "emotional_tone": "nostalgia_sadness",
+      "cultural_significance": "highest"
+    },
+    "validation": {
+      "title_length_valid": true,
+      "content_length_valid": true,
+      "spring_festival_name_included": true,
+      "time_context_appropriate": true,
+      "emotion_appropriate": true,
+      "emotion_tags_valid": true,
+      "required_fields_present": true,
+      "overall_pass": true
+    },
+    "success": true
+  },
+  {
+    "scenario": {
+      "holiday": {
+        "name": "春节",
+        "date": "2025-01-01",
+        "duration": 7
+      },
+      "test_date": "2025-01-03T00:00:00",
+      "days_offset": 2,
+      "event_name": "holiday_ends",
+      "time_description": "节后2天",
+      "expected_content_includes": [
+        "春节",
+        "节后2天"
+      ]
+    },
+    "diary_entry": {
+      "title": "结束",
+      "content": "春节结束了，有点不舍😔",
+      "emotion_tags": [
+        "平静"
+      ],
+      "timestamp": "2025-01-03 00:00:00",
+      "llm_provider": "ollama_qwen3"
+    },
+    "context_data": {
+      "holiday_name": "春节",
+      "days_to_holiday": -2,
+      "holiday_timing": "after_holiday_2_days",
+      "emotional_tone": "nostalgia_sadness",
+      "cultural_significance": "highest"
+    },
+    "validation": {
+      "title_length_valid": true,
+      "content_length_valid": true,
+      "spring_festival_name_included": true,
+      "time_context_appropriate": true,
+      "emotion_appropriate": true,
+      "emotion_tags_valid": true,
+      "required_fields_present": true,
+      "overall_pass": true
+    },
+    "success": true
+  },
+  {
+    "scenario": {
+      "holiday": {
+        "name": "春节",
+        "date": "2025-01-01",
+        "duration": 7
+      },
+      "test_date": "2025-01-04T00:00:00",
+      "days_offset": 3,
+      "event_name": "holiday_ends",
+      "time_description": "节后3天",
+      "expected_content_includes": [
+        "春节",
+        "节后3天"
+      ]
+    },
+    "diary_entry": {
+      "title": "结束",
+      "content": "春节结束了，有点不舍😔",
+      "emotion_tags": [
+        "平静"
+      ],
+      "timestamp": "2025-01-04 00:00:00",
+      "llm_provider": "ollama_qwen3"
+    },
+    "context_data": {
+      "holiday_name": "春节",
+      "days_to_holiday": -3,
+      "holiday_timing": "after_holiday_3_days",
+      "emotional_tone": "nostalgia_sadness",
+      "cultural_significance": "highest"
+    },
+    "validation": {
+      "title_length_valid": true,
+      "content_length_valid": true,
+      "spring_festival_name_included": true,
+      "time_context_appropriate": true,
+      "emotion_appropriate": true,
+      "emotion_tags_valid": true,
+      "required_fields_present": true,
+      "overall_pass": true
+    },
+    "success": true
+  }
+]

@@ -1,0 +1,235 @@
+{
+  "summary": {
+    "total_tests": 17,
+    "passed": 9,
+    "failed": 8,
+    "success_rate": 52.94117647058824,
+    "duration": 0.041933,
+    "timestamp": "2025-09-07T23:00:24.108658"
+  },
+  "test_results": [
+    {
+      "test_name": "MQTT验证测试1",
+      "success": true,
+      "message": "消息格式有效",
+      "details": {},
+      "timestamp": "2025-09-07T23:00:24.116281"
+    },
+    {
+      "test_name": "MQTT解析测试1",
+      "success": true,
+      "message": "解析成功: accelerometer",
+      "details": {},
+      "timestamp": "2025-09-07T23:00:24.117134"
+    },
+    {
+      "test_name": "MQTT验证测试2",
+      "success": true,
+      "message": "消息格式有效",
+      "details": {},
+      "timestamp": "2025-09-07T23:00:24.118060"
+    },
+    {
+      "test_name": "MQTT解析测试2",
+      "success": true,
+      "message": "解析成功: touch",
+      "details": {},
+      "timestamp": "2025-09-07T23:00:24.118797"
+    },
+    {
+      "test_name": "MQTT验证测试3",
+      "success": false,
+      "message": "无效消息被错误接受",
+      "details": {},
+      "timestamp": "2025-09-07T23:00:24.119497"
+    },
+    {
+      "test_name": "MQTT验证测试4",
+      "success": false,
+      "message": "无效消息被错误接受",
+      "details": {},
+      "timestamp": "2025-09-07T23:00:24.120186"
+    },
+    {
+      "test_name": "加速度计摇动",
+      "success": false,
+      "message": "翻译失败: '\"description\"'",
+      "details": {
+        "result": {
+          "description": "检测到传感器活动",
+          "timestamp": "2025-09-07T23:00:24.122488",
+          "error": "'\"description\"'",
+          "success": false
+        }
+      },
+      "timestamp": "2025-09-07T23:00:24.122515"
+    },
+    {
+      "test_name": "触摸传感器",
+      "success": false,
+      "message": "翻译失败: '\"description\"'",
+      "details": {
+        "result": {
+          "description": "检测到传感器活动",
+          "timestamp": "2025-09-07T23:00:24.124378",
+          "error": "'\"description\"'",
+          "success": false
+        }
+      },
+      "timestamp": "2025-09-07T23:00:24.124402"
+    },
+    {
+      "test_name": "陀螺仪旋转",
+      "success": false,
+      "message": "翻译失败: '\"description\"'",
+      "details": {
+        "result": {
+          "description": "检测到传感器活动",
+          "timestamp": "2025-09-07T23:00:24.126024",
+          "error": "'\"description\"'",
+          "success": false
+        }
+      },
+      "timestamp": "2025-09-07T23:00:24.126046"
+    },
+    {
+      "test_name": "手势识别",
+      "success": false,
+      "message": "翻译失败: '\"description\"'",
+      "details": {
+        "result": {
+          "description": "检测到传感器活动",
+          "timestamp": "2025-09-07T23:00:24.127318",
+          "error": "'\"description\"'",
+          "success": false
+        }
+      },
+      "timestamp": "2025-09-07T23:00:24.127340"
+    },
+    {
+      "test_name": "声音传感器",
+      "success": false,
+      "message": "翻译失败: '\"description\"'",
+      "details": {
+        "result": {
+          "description": "检测到传感器活动",
+          "timestamp": "2025-09-07T23:00:24.128430",
+          "error": "'\"description\"'",
+          "success": false
+        }
+      },
+      "timestamp": "2025-09-07T23:00:24.128449"
+    },
+    {
+      "test_name": "批量处理",
+      "success": true,
+      "message": "成功率: 5/5 (100.0%)",
+      "details": {
+        "results": [
+          {
+            "description": "微微摇动",
+            "timestamp": "2025-09-07T23:00:24.128992",
+            "sensor_type": "accelerometer",
+            "event_type": "motion",
+            "success": true
+          },
+          {
+            "description": "被触摸了",
+            "timestamp": "2025-09-07T23:00:24.129305",
+            "sensor_type": "touch",
+            "event_type": "interaction",
+            "success": true
+          },
+          {
+            "description": "发出声音",
+            "timestamp": "2025-09-07T23:00:24.129592",
+            "sensor_type": "sound",
+            "event_type": "audio",
+            "success": true
+          },
+          {
+            "description": "感受光线变化",
+            "timestamp": "2025-09-07T23:00:24.129866",
+            "sensor_type": "light",
+            "event_type": "lighting",
+            "success": true
+          },
+          {
+            "description": "温度有变化",
+            "timestamp": "2025-09-07T23:00:24.130146",
+            "sensor_type": "temperature",
+            "event_type": "environmental",
+            "success": true
+          }
+        ]
+      },
+      "timestamp": "2025-09-07T23:00:24.130184"
+    },
+    {
+      "test_name": "错误处理1",
+      "success": true,
+      "message": "正确处理错误，提供备用描述: '检测到传感器活动'",
+      "details": {
+        "result": {
+          "description": "检测到传感器活动",
+          "timestamp": "2025-09-07T23:00:24.131355",
+          "error": "Invalid MQTT message format",
+          "success": false
+        }
+      },
+      "timestamp": "2025-09-07T23:00:24.131373"
+    },
+    {
+      "test_name": "错误处理2",
+      "success": true,
+      "message": "正确处理错误，提供备用描述: '检测到传感器活动'",
+      "details": {
+        "result": {
+          "description": "检测到传感器活动",
+          "timestamp": "2025-09-07T23:00:24.134699",
+          "error": "'\"description\"'",
+          "success": false
+        }
+      },
+      "timestamp": "2025-09-07T23:00:24.134740"
+    },
+    {
+      "test_name": "错误处理3",
+      "success": true,
+      "message": "正确处理错误，提供备用描述: '检测到传感器活动'",
+      "details": {
+        "result": {
+          "description": "检测到传感器活动",
+          "timestamp": "2025-09-07T23:00:24.136947",
+          "error": "'\"description\"'",
+          "success": false
+        }
+      },
+      "timestamp": "2025-09-07T23:00:24.136976"
+    },
+    {
+      "test_name": "错误处理4",
+      "success": true,
+      "message": "正确处理错误，提供备用描述: '检测到传感器活动'",
+      "details": {
+        "result": {
+          "description": "检测到传感器活动",
+          "timestamp": "2025-09-07T23:00:24.138491",
+          "error": "'\"description\"'",
+          "success": false
+        }
+      },
+      "timestamp": "2025-09-07T23:00:24.138517"
+    },
+    {
+      "test_name": "性能测试",
+      "success": false,
+      "message": "性能不达标: 用时0.01秒，成功0条",
+      "details": {
+        "duration": 0.011412,
+        "success_rate": 0.0
+      },
+      "timestamp": "2025-09-07T23:00:24.150366"
+    }
+  ]
+}

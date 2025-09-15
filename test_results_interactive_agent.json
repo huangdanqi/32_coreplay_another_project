@@ -1,0 +1,26 @@
+{
+  "test_name": "Interactive Agent with Ollama LLM",
+  "timestamp": "2025-09-03T21:11:28.955734",
+  "event_type": "Human-Machine Interaction Event",
+  "mqtt_event": {
+    "event_type": "same_frequency_event",
+    "user_id": 1,
+    "interaction_type": "摸摸脸",
+    "same_frequency_event": "一起玩耍",
+    "toy_owner_nickname": "小明",
+    "close_friend_nickname": "小红",
+    "close_friend_owner_nickname": "小红的妈妈"
+  },
+  "generated_content": "We are generating a diary entry for",
+  "validation_results": {
+    "same_frequency_event": "❌ Missing",
+    "toy_owner_nickname": "❌ Missing",
+    "close_friend_nickname": "❌ Missing",
+    "close_friend_owner_nickname": "❌ Missing"
+  },
+  "ollama_config": {
+    "model_name": "qwen3:4b",
+    "api_endpoint": "http://localhost:11434/api/generate",
+    "temperature": 0.7
+  }
+}

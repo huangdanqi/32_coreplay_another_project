@@ -1,0 +1,56 @@
+{
+  "test_summary": {
+    "total_tests": 6,
+    "passed_tests": 3,
+    "failed_tests": 3,
+    "success_rate": 50.0
+  },
+  "test_results": [
+    {
+      "test_type": "catastrophic",
+      "test_case": "Major disaster event",
+      "status": "FAILED",
+      "error": "Expected disaster or disaster classification, got: celebration"
+    },
+    {
+      "test_type": "catastrophic",
+      "test_case": "Natural disaster with high impact",
+      "status": "FAILED",
+      "error": "Expected disaster or disaster classification, got: celebration"
+    },
+    {
+      "test_type": "catastrophic",
+      "test_case": "Security incident",
+      "status": "FAILED",
+      "error": "Expected disaster or disaster classification, got: celebration"
+    },
+    {
+      "test_type": "beneficial",
+      "test_case": "Major celebration event",
+      "status": "PASSED",
+      "event_name": "celebration",
+      "expected_tags": [
+        "major beneficial"
+      ]
+    },
+    {
+      "test_type": "beneficial",
+      "test_case": "Cultural celebration",
+      "status": "PASSED",
+      "event_name": "celebration",
+      "expected_tags": [
+        "major beneficial"
+      ]
+    },
+    {
+      "test_type": "beneficial",
+      "test_case": "Achievement celebration",
+      "status": "PASSED",
+      "event_name": "celebration",
+      "expected_tags": [
+        "major beneficial"
+      ]
+    }
+  ],
+  "timestamp": "2025-09-02T22:43:03.039878"
+}

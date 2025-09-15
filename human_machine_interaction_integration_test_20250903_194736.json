@@ -1,0 +1,90 @@
+{
+  "test_timestamp": "2025-09-03T19:47:36.169358",
+  "test_name": "Human-Machine Interaction Event Integration Test",
+  "specification_section": "3.8",
+  "test_type": "Integration",
+  "results": [
+    {
+      "test": "MQTT Event Message Processing",
+      "passed": true,
+      "result": {
+        "success": true,
+        "event": "主人触发玩具喜欢的互动1次",
+        "user_name": "小明",
+        "interaction_type": "摸摸脸",
+        "changes": {
+          "x_change": 1,
+          "y_change": 1,
+          "intimacy_change": 1
+        }
+      }
+    },
+    {
+      "test": "Same Frequency Event Detection",
+      "passed": true,
+      "result": {
+        "success": true,
+        "event_name": "玩具同频事件",
+        "interaction_type": "摸摸脸",
+        "time_difference": 2.004002,
+        "user1_id": 1,
+        "user2_id": 2,
+        "user1_name": "小明",
+        "user2_name": "小红"
+      }
+    },
+    {
+      "test": "Diary Content Generation",
+      "passed": true,
+      "result": {
+        "title": "同频惊喜",
+        "content": "和小红同时摸摸脸！",
+        "emotion_tags": [
+          "开心快乐",
+          "兴奋激动"
+        ],
+        "event_data": {
+          "success": true,
+          "event_name": "玩具同频事件",
+          "interaction_type": "摸摸脸",
+          "time_difference": 2.004002,
+          "user1_id": 1,
+          "user2_id": 2,
+          "user1_name": "小明",
+          "user2_name": "小红"
+        },
+        "timestamp": "2025-09-03T19:47:36.157023"
+      }
+    }
+  ],
+  "mock_data": {
+    "users": {
+      "1": {
+        "id": 1,
+        "name": "小明",
+        "role": "lively",
+        "update_x_value": 7,
+        "update_y_value": 5,
+        "intimacy_value": 12
+      },
+      "2": {
+        "id": 2,
+        "name": "小红",
+        "role": "clam",
+        "update_x_value": 2,
+        "update_y_value": -1,
+        "intimacy_value": 8
+      },
+      "3": {
+        "id": 3,
+        "name": "小李",
+        "role": "lively",
+        "update_x_value": 0,
+        "update_y_value": 0,
+        "intimacy_value": 5
+      }
+    },
+    "interactions_count": 4,
+    "friendships_count": 1
+  }
+}

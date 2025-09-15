@@ -1,0 +1,28 @@
+version: '3.9'
+
+services:
+  backend:
+    build:
+      context: ..
+      dockerfile: deploy/backend.Dockerfile
+    container_name: coreplay-backend
+    environment:
+      - PYTHONUNBUFFERED=1
+    ports:
+      - "${BACKEND_HTTP_PORT:-5003}:5003"
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ..
+      dockerfile: deploy/frontend.Dockerfile
+      args:
+        - VITE_API_BASE_URL=http://$PUBLIC_HOST:${BACKEND_HTTP_PORT:-5003}/api
+    container_name: coreplay-frontend
+    depends_on:
+      - backend
+    ports:
+      - "${FRONTEND_HTTP_PORT:-80}:80"
+    restart: unless-stopped
+
+

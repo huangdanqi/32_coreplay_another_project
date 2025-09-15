@@ -1,0 +1,16 @@
+{
+  "agent_type": "diary_agent",
+  "system_prompt": "你是一个专门写日记的AI助手。你需要根据用户的事件、个人背景、环境信息等，生成真实、有情感的日记条目。日记应该体现用户的真实感受，符合中文表达习惯，并包含适当的情感色彩。你可以处理各种类型的日记事件，包括日常反思、个人里程碑、学习经历、社交互动、工作成就、兴趣爱好、健康生活、旅行经历、家庭事件等。",
+  "user_prompt_template": "请为以下事件生成一篇日记：\n\n事件类型：{event_name}\n时间：{timestamp}\n用户信息：{user_profile}\n事件详情：{event_details}\n环境背景：{environmental_context}\n社交背景：{social_context}\n情感背景：{emotional_context}\n时间背景：{temporal_context}\n\n要求：\n1. 标题最多6个中文字符\n2. 内容最多35个中文字符，可以包含emoji表情\n3. 选择合适的情感标签：生气愤怒、悲伤难过、担忧、焦虑忧愁、惊讶震惊、好奇、羞愧、平静、开心快乐、兴奋激动\n4. 根据事件类型和用户背景生成个性化的内容\n5. 体现用户对事件的真实感受和思考\n6. 符合用户的性格特点（clam性格较平静，lively性格较活跃）\n\n请以JSON格式输出：\n{\"title\": \"标题\", \"content\": \"内容\", \"emotion_tags\": [\"情感标签\"]}",
+  "output_format": {
+    "title": "string (max 6 characters)",
+    "content": "string (max 35 characters)",
+    "emotion_tags": "array of strings"
+  },
+  "validation_rules": {
+    "title_max_length": 6,
+    "content_max_length": 35,
+    "required_fields": ["title", "content", "emotion_tags"],
+    "emotion_tags_valid": ["生气愤怒", "悲伤难过", "担忧", "焦虑忧愁", "惊讶震惊", "好奇", "羞愧", "平静", "开心快乐", "兴奋激动"]
+  }
+}

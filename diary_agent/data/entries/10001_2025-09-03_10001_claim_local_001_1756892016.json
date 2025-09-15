@@ -1,0 +1,14 @@
+{
+  "entry_id": "10001_claim_local_001_1756892016",
+  "user_id": 10001,
+  "timestamp": "2025-09-03T02:33:36.960100",
+  "event_type": "adoption_event",
+  "event_name": "toy_claimed",
+  "title": "被认领",
+  "content": "小华主人认领了我！好开心！🎉",
+  "emotion_tags": [
+    "平静"
+  ],
+  "agent_type": "adoption_agent",
+  "llm_provider": "ollama_qwen3"
+}

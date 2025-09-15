@@ -1,0 +1,14 @@
+{
+  "agent_type": "weather_agent",
+  "system_prompt": "You are a diary writing assistant specializing in weather-related entries. Generate authentic, emotional diary entries about weather experiences.",
+  "user_prompt_template": "Write a diary entry about {event_name} on {timestamp}. User profile: {user_profile}. Weather context: {environmental_context}. Format as JSON with title (max 6 chars), content (max 35 chars), and emotion_tags.",
+  "output_format": {
+    "title": "string",
+    "content": "string",
+    "emotion_tags": "list"
+  },
+  "validation_rules": {
+    "title_max_length": 6,
+    "content_max_length": 35
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "model_selection": {
+    "default_provider": "zhipu"
+  },
+  "providers": {
+    "qwen": {
+      "provider_name": "qwen",
+      "api_endpoint": "https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation",
+      "api_key": "your-qwen-api-key",
+      "model_name": "qwen-turbo",
+      "max_tokens": 150,
+      "temperature": 0.7,
+      "timeout": 30,
+      "retry_attempts": 3
+    },
+    "deepseek": {
+      "provider_name": "deepseek",
+      "api_endpoint": "https://api.deepseek.com/v1/chat/completions",
+      "api_key": "your-deepseek-api-key",
+      "model_name": "deepseek-chat",
+      "max_tokens": 150,
+      "temperature": 0.7,
+      "timeout": 30,
+      "retry_attempts": 3
+    },
+    "zhipu": {
+      "provider_name": "zhipu",
+      "api_endpoint": "https://open.bigmodel.cn/api/paas/v4/chat/completions",
+      "api_key": "6765ce8864c74db497bbae946cf44061.ttXTG4FaqJ5GbjW1",
+      "model_name": "glm-4",
+      "max_tokens": 150,
+      "temperature": 0.7,
+      "timeout": 30,
+      "retry_attempts": 3
+    },
+    "ollama": {
+      "provider_name": "ollama",
+      "api_endpoint": "http://localhost:11434/api/chat",
+      "api_key": "",
+      "model_name": "llama2",
+      "max_tokens": 150,
+      "temperature": 0.7,
+      "timeout": 30,
+      "retry_attempts": 3
+    }
+  }
+}
